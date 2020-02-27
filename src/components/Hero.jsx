@@ -14,7 +14,6 @@ import Typing from 'react-typing-animation';
 
 import classnames from "classnames";
 import NavPills from './serviceTabs/navPills';
-import Particles from './bannerAnimation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas, faChartLine } from '@fortawesome/free-solid-svg-icons'
 import '../assets/css/homecustom.css';
