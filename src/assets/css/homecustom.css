@@ -167,7 +167,6 @@
     padding-bottom: 20px !important;
 }
 .header-style{
-    padding-bottom: 20px;
     color: #fff;
     font-size: 65px;
     font-weight: 500;
@@ -215,6 +214,7 @@
 
 .logo-size{
     height: 40px !important;
+    padding-left: 20px !important;
 }
 
 

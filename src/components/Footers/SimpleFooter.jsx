@@ -33,7 +33,7 @@ class SimpleFooter extends React.Component {
               <Col className=" text-lg-center btn-wrapper" lg="6">
               <Button
                   className=" btn-neutral btn-icon-only btn-round ml-1"
-                  href="//api.whatsapp.com/send?phone=919930854822&text=I'm interested"
+                  href="//api.whatsapp.com/send?phone=919967110003&text=I'm interested"
                   id="tooltip126536701"
                   size="lg"
                   target="_blank"
@@ -123,7 +123,7 @@ class SimpleFooter extends React.Component {
                Andheri East West Flyover
                Andheri East,
                Mumbai, Maharashtra 400069<br/>
-               <a href = "tel: +91 9930854822">Phone: +91-9930854822</a><br/>
+               <a href = "tel: +91 9930854822">Phone: +91-9967110003</a><br/>
                <a href = "mailto: contact@flookup.com">Email: contact@flookup.com</a>
                 </div>
               </Col>        

@@ -32,7 +32,6 @@ class DemoNavbar extends React.Component {
             expand="lg"
             id="navbar-main"
           >
-            <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img className="logo-size"
                   alt="..."
@@ -40,7 +39,6 @@ class DemoNavbar extends React.Component {
                 /> 
                 {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
               </NavbarBrand>
-            </Container>
           </Navbar>
         </header>
       </>
