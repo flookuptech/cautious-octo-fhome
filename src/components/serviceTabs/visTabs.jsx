@@ -98,7 +98,7 @@ class VisTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs3">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
             </TabContent>

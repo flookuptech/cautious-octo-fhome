@@ -33,11 +33,11 @@ class SimpleFooter extends React.Component {
               <Col className=" text-lg-center btn-wrapper" lg="6">
               <Button
                   className=" btn-neutral btn-icon-only btn-round ml-1"
-                  href="//api.whatsapp.com/send?phone=917059010203&text=I'm interested"
+                  href="//api.whatsapp.com/send?phone=919967110003&text=I'm interested"
                   id="tooltip126536701"
                   size="lg"
                   target="_blank"
-                  style={{background:"#128C7E",color:"#fff"}}
+                  style={{background:"#128C7E",borderColor:"#128C7E",color:"#fff"}}
                 >
                   <i className=" fa fa-whatsapp" />
                 </Button>
@@ -99,16 +99,35 @@ class SimpleFooter extends React.Component {
               </Col>
             </Row>
             <hr />
+            <Row>
+            <Col xs="12" md="4" lg="4">
             <div className="about">
+              <Link to= {"/"}>
+                Home
+              </Link>
+              <br/>
             <Link to={"/about"}>
                     About Us
                   </Link>
-                </div>
-                <div className="blog">
+            <div className="blog">
                 <a href="https://myregisteredvaluer.com/" target="_blank">
                     Our Blogs
                   </a>
                 </div>
+                </div>  
+                </Col>   
+                <Col xs="12" md="8" lg="8">
+              <div className=" footer-contact">
+               702 (L), Hubtown Solaris
+               NS Phadke Marg,<br />
+               Andheri East West Flyover
+               Andheri East,
+               Mumbai, Maharashtra 400069<br/>
+               <a href = "tel: +91 9930854822">Phone: +91-9967110003</a><br/>
+               <a href = "mailto: contact@flookup.com">Email: contact@flookup.com</a>
+                </div>
+              </Col>        
+                </Row>
             <Row className=" align-items-center justify-content-md-between">
               <Col md="4">
                 <div className=" copyright">
@@ -119,17 +138,7 @@ class SimpleFooter extends React.Component {
                   .
                 </div>
               </Col>
-              <Col md="8">
-              <div className=" footer-contact">
-               702 (L), Hubtown Solaris
-               NS Phadke Marg,<br />
-               Andheri East West Flyover
-               Andheri East,
-               Mumbai, Maharashtra 400069<br/>
-               <a href = "tel: +91 7059010203">Phone: +91-7059010203</a><br/>
-               <a href = "mailto: abc@example.com">Email: contact@flookup.com</a>
-                </div>
-              </Col> 
+             
             </Row>
           </Container>
         </footer>

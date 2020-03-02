@@ -171,7 +171,7 @@ class ServicesTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs3">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
               <TabPane tabId="tabs4">
@@ -185,22 +185,22 @@ class ServicesTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
               <TabPane tabId="tabs6">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
               <TabPane tabId="tabs7">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
               <TabPane tabId="tabs8">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
             </TabContent>

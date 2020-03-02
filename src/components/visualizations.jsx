@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Container, Col, Row, Button, Alert } from "reactstrap";
+import { Container, Col, Row, Alert } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
      faChartLine

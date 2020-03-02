@@ -1,21 +1,12 @@
 import React from "react";
 import { 
-  Container,
   Row,
   Col,
-  Card,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane } from "reactstrap";
+  } from "reactstrap";
 import Typing from 'react-typing-animation';
 
-import classnames from "classnames";
 import NavPills from './serviceTabs/navPills';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fas, faChartLine } from '@fortawesome/free-solid-svg-icons'
+
 import '../assets/css/homecustom.css';
 
 class Hero extends React.Component {
@@ -34,16 +25,16 @@ class Hero extends React.Component {
         <div className="position-relative">
             <section className="section section-lg section-hero section-shaped background-gradient"> 
             <div className="shape shape-style-1 shape-default">
-              <span className="span-150" />
-              <span className="span-50" />
-              <span className="span-50" />
-              <span className="span-75" />
-              <span className="span-100" />
-              <span className="span-75" />
-              <span className="span-50" />
-              <span className="span-100" />
-              <span className="span-50" />
-              <span className="span-100" />
+              <span className="span-150 animate-bg" />
+              <span className="span-50 animate-bg" />
+              <span className="span-50 animate-bg" />
+              <span className="span-75 animate-bg" />
+              <span className="span-100 animate-bg" />
+              <span className="span-75 animate-bg" />
+              <span className="span-50 animate-bg" />
+              <span className="span-100 animate-bg" />
+              <span className="span-50 animate-bg" />
+              <span className="span-100 animate-bg" />
             </div>
             {/* <Container className="shape-container d-flex align-items-center py-lg"> */}
               <div className="col px-0">
@@ -53,11 +44,14 @@ class Hero extends React.Component {
                       alt="..."
                       className="img-fluid banner-img-logo"
                       src={require("assets/img/theme/Logo.png")}/> */}
-                    <Typing speed="50">
+                    <Typing speed="500">
                       <h5 className="header-style">
-                        Your Financial Effectiveness Partner
+                        Your Financial Effectiveness
                         </h5>
-                    </Typing>
+                        <h5 className="header-style">Guide</h5>
+                        <Typing.Backspace count={5} />
+                        <h5 className="header-style">Partner</h5>
+                      </Typing>
      
                     <h1 style={{color:"#000"}} className="display-3 text-white tag-line">
                       Grow With Us

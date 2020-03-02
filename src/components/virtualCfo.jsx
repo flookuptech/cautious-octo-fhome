@@ -1,12 +1,10 @@
 import React from "react";
-import { Badge, Button, Card, CardBody, Container, Row, Col, NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane } from "reactstrap";
+import { Container,
+   Row,
+   Col
+  } from "reactstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import classnames from "classnames";
 
 import {
    faChalkboardTeacher
@@ -29,7 +27,7 @@ import ContactForm from "./Modal/contactForm";
 
   return (
      <>
-   <section id="cfo" className="section bg-white renewal-padding">
+   <section id="cfo" className="section bg-white">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">

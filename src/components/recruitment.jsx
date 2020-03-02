@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Container, Col, Row } from "reactstrap";
+import {Container, Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
      faUserGraduate

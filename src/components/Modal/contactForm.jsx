@@ -11,10 +11,9 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-  Modal,
-  Row,
-  Col
+  Modal
 } from "reactstrap";
+import Logo from "../../assets/img/theme/Logo.png"
 
 class ContactForm extends React.Component {
   state = {
@@ -44,9 +43,13 @@ class ContactForm extends React.Component {
             >
               <div className="modal-body p-0">
                 <Card className="bg-secondary shadow border-0">
-                  <CardHeader className="bg-transparent pb-5">
+                  <CardHeader className="bg-transparent pb-5 contact-card-header" >
                     <div className="text-muted text-center mt-2 mb-3">
-                      <small>Contact Details</small>
+                    <img src={Logo} alt="logo" style={{height:35,width:100}} />
+                    <br/>
+                    <br/>
+                      <p style={{fontSize:20}}>Contact Form</p>
+                     
                     </div>
                   </CardHeader>
                   <CardBody className="px-lg-5 py-lg-5">
