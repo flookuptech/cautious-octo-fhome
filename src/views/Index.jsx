@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+
 // nodejs library that concatenates classes
 // import classnames from "classnames";
 
@@ -26,9 +18,7 @@ import {
 import DemoNavbar from "../components/Navbars/DemoNavbar";
 import CardsFooter from "../components/Footers/SimpleFooter";
 import Hero from "../components/Hero";
-import Cards from "../views/IndexSections/Cards";
 import FinTech from "components/finTech";
-import WhatsappBar from "components/whatsAppBar";
 import Valuations from "components/valuations";
 import RatingsBar from "components/ratingsBar";
 import VirtualCfo from "components/virtualCfo";
@@ -37,7 +27,6 @@ import Insurance from "components/insurance";
 import Recruitment from "components/recruitment";
 import Visualizations from "components/visualizations";
 import FundRaising from "components/fundRaising";
-import About from "../components/about";
 
 // index page sections
 

@@ -1,18 +1,9 @@
 .py-5{
     text-align:center;
 }
-.ins-icon{
-    width:4rem;
-    height:4rem;
-}
-.ins-card-heading{
-font-size:20px;
-font-weight:600;
-}
-.ins-card-detail{
-    font-size:17px;
 
-}
+/* Background Gradient */
+
 .section-shaped .shape-style-1.shape-default {
     background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%);
     background: linear-gradient(to right, #FFC371, #FF5F6D);
@@ -28,11 +19,7 @@ font-weight:600;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
-.whatsapp-section{
-    font-size:29px;
-    font-family: 'Poppins', sans-serif !important;
-    
-}
+
 .fa{
     padding-top:10px;
 }
@@ -43,44 +30,24 @@ font-weight:600;
     background: #fff !important;
 }
 .tag-line{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 34px;
-    color: #000 !important;
-    padding-bottom: 20px !important;
+    color: #423939 !important;
+    padding-bottom: 25px !important;
 }
 
-@media only screen and (max-width: 768px) {
-    .logo-size {
-    display: none;
-    }
-    .translate-test{
-        display: block !important;
-    }
-  .align-mobile{
-      text-align: center;
-  }
-  .mobile-text{
-      font-size:15px;
-  }
-  .fill-secondary{
-      display:none !important;
-  }
-  }
-  @media only screen and (max-width: 1024px) {
-    .fill-secondary{
-        display:none !important;
-    }
-  }
+
+  
  .pills-padding{
      padding-top: 60px;
      padding-right: 80px;
      padding-left:80px ;
  }
- .background-gradient{
-    /* background-image: linear-gradient(to top, #1d53bd 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%) !important; */
-    /* background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%); */
+ /* .background-gradient{
+    background-image: linear-gradient(to top, #1d53bd 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%) !important;
+    background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%);
     background: linear-gradient(to right, #FFC371, #FF5F6D);
- }
+ } */
 .banner-pills > a{
     height: 150px !important;
     width: 150px !important;
@@ -95,7 +62,7 @@ font-weight:600;
     color: #464846 !important;
 }
 .pills-text{
-    color: #000 !important;
+    color: #313030 !important;
     padding-top: 10px;
     font-size: 20px !important;
     font-weight: 500 !important;
@@ -103,11 +70,7 @@ font-weight:600;
 .banner-pills > a.active{
     background-color: #fff !important;
 }
-@media (min-width: 768px){
-.background-gradient {
-    min-height: 768px !important;
-}
-}
+
 .nav-box-shadow{
     box-shadow: none !important;
     color: #469a34 !important;
@@ -146,7 +109,8 @@ font-weight:600;
 
 .btn11:hover{
     border: 1px solid transparent;
-	color: #02a157 !important;
+    color: #02a157 !important;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.2), 0 3px 6px rgba(0, 0, 0, 0.08) !important;
 }
 .btn11::before {
     content: '';
@@ -202,28 +166,11 @@ font-weight:600;
     width: 200px !important;
     padding-bottom: 20px !important;
 }
-@media screen and (min-width: 1025px) {
-.section-image-styles{
-    height: 450px !important;
-    width: 450px !important;
-    max-width: none !important;
-}
-}
-@media screen and (max-width: 767px) {
-.header-style{
-        font-size: 30px !important;
-}
-.about-card-align{
-    padding-top: 0rem !important;
-}
-.team-tag-line{
-    font-size: 30px !important;
-}
-}
 .header-style{
     padding-bottom: 20px;
     color: #fff;
     font-size: 65px;
+    font-weight: 500;
 }
 .headroom--not-top{
     background-color: #efeae5 !important;
@@ -253,3 +200,94 @@ font-weight:600;
 .about-card-align{
     padding-top: 8rem;
 }
+.home-banner-icons{
+    background: white !important;
+    border-radius: 50% !important;
+    height: 150px !important;
+    width: 150px !important;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(0,0,10,0.4);
+}
+
+.contact-card-header{
+    padding-bottom: 0px !important;
+}
+
+.logo-size{
+    height: 40px !important;
+}
+
+
+/* Responsive CSS */
+
+@media screen and (min-width: 1025px) {
+.section-image-styles{
+    height: 450px !important;
+    width: 450px !important;
+    max-width: none !important;
+}
+}
+.animate-bg{
+    animation: floating 3s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+    will-change: transform;
+}
+
+@media only screen and (max-width: 1024px) {
+    .fill-secondary{
+        display:none !important;
+    }
+  }
+
+@media (min-width: 768px){
+    .background-gradient {
+        min-height: 768px !important;
+    }
+    }
+
+    /* Responsive CSS End */
+
+
+
+
+    /* Mobile Screen Css */
+
+@media screen and (max-width: 767px) {
+.header-style{
+        font-size: 27px !important;
+}
+.about-card-align{
+    padding-top: 0rem !important;
+}
+.team-tag-line{
+    font-size: 30px !important;
+}
+.btn11{
+    padding: 15px 20px !important;
+}
+.pills-text{
+    font-size: 16px !important;
+}
+.home-banner-icons{
+    height: 140px !important;
+    width: 140px !important;
+}
+}
+@media only screen and (max-width: 768px) {
+    .logo-size {
+    height: 25px !important;
+    }
+    .translate-test{
+        display: block !important;
+    }
+  .align-mobile{
+      text-align: center;
+  }
+  .mobile-text{
+      font-size:15px;
+  }
+  .fill-secondary{
+      display:none !important;
+  }
+  }
+
+  /* Mobile CSS End */

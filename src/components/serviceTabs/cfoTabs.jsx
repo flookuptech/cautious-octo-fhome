@@ -124,7 +124,7 @@ class CfoTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs3">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
               <TabPane tabId="tabs4">
@@ -138,7 +138,7 @@ class CfoTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                  Test
+                  Lorem Ipsum
                 </p>
               </TabPane>
             </TabContent>

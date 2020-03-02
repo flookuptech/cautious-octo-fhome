@@ -1,33 +1,14 @@
-/*!
 
-=========================================================
-* Argon Design System React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
-import { Button, Card, Container, Row, Col } from "reactstrap";
+import { Card, Container, Row, Col } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import SimpleFooter from "components/Footers/SimpleFooter.jsx";
-import Typing from "react-typing-animation";
 import '../assets/css/homecustom.css';
 import TeamTab from "./serviceTabs/teamTab";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 
 class About extends React.Component {
@@ -44,13 +25,13 @@ class About extends React.Component {
           <section className="section-profile-cover about-section section-shaped my-0">
             {/* Circles background */}
             <div className="shape shape-style-1 shape-default alpha-4">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
+              <span className="animate-bg" />
             </div>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">

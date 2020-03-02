@@ -2,15 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeartbeat,
-  faStarOfLife,
-  faCoins,
-  faRupeeSign,
-  faPiggyBank,
-  faIndustry
-} from "@fortawesome/free-solid-svg-icons";
 
 // reactstrap components
 import {
@@ -22,12 +13,7 @@ import {
   Media,
   NavbarBrand,
   Navbar,
-  NavItem,
-  Nav,
-  Button,
   Container,
-  Row,
-  Col
 } from "reactstrap";
 import '../../assets/css/homecustom.css'
 

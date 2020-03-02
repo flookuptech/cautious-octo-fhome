@@ -1,15 +1,11 @@
 import React from "react";
-import { Badge, Button, Card, CardBody, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCheckDouble,
-  faStickyNote,
-  faHome,
   faToolbox
 } from "@fortawesome/free-solid-svg-icons";
 import ServicesTabs from "./serviceTabs/servicesTabs";
 import ContactForm from "./Modal/contactForm";
-import Particles from "react-particles-js";
 
 const Services = () => {
   return (
@@ -33,7 +29,6 @@ const Services = () => {
               <h3 style={{textAlign:"center", fontWeight:"bold"}}>Services</h3>
               <ServicesTabs />
               <ContactForm/>
-              <Particles/>
               </div>
           </Col>
         </Row>

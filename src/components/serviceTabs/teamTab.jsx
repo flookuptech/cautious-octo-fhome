@@ -1,14 +1,7 @@
 import React from "react";
-import classnames from "classnames";
+
 // reactstrap components
 import {
-  Card,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from "reactstrap";
@@ -36,8 +29,8 @@ class TeamTab extends React.Component {
                             src={require("assets/img/team/Vaibhav.jpg")}
                           />
                           <p className="team-name">
-                              Vaibhav Mandhana
-                          </p>
+                              Vaibhav Mandhana                             
+                          </p>                         
                       </div>
                       </div>
                     </Col>
