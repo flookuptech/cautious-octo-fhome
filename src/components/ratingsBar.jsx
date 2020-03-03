@@ -6,7 +6,7 @@ import { faGrinBeam } from "@fortawesome/free-solid-svg-icons";
 
 const RatingsBar = () => {
   return (
-    <section className="section p-1 bg-danger">
+    <section>
       {/* <Container>
         <Row className="row-grid align-items-center p-2">
           <Col md="6">

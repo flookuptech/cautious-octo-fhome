@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Suspense} from "react";
 
 // nodejs library that concatenates classes
 // import classnames from "classnames";
@@ -41,9 +41,9 @@ class Landing extends React.Component {
   render() {
     return (
       <>
+       
         <DemoNavbar />
         <main ref="main">
-  
           <Hero />
           {/* <Cards /> */}
           <FinTech />

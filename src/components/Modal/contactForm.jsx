@@ -86,7 +86,7 @@ class ContactForm extends React.Component {
                       </FormGroup>
                       <div className="text-center">
                         <Button
-                          className="my-4"
+                          className="my-4 btn11 submit-btn"
                           color="primary"
                           type="button"
                         >

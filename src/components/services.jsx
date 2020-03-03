@@ -16,7 +16,7 @@ const Services = () => {
             <img
               alt="..."
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/services1.png")}
+              src={require("assets/img/theme/services2.png")}
             />
           </Col>
           <Col className="order-md-1" md="8">

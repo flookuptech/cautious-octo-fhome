@@ -11,8 +11,7 @@ import ContactForm from "./Modal/contactForm";
 const FundRaising = () => {
   return (
     <section id="fund" className="section section-lg bg-gradient-secondary section-padding background-white">
-        <Alert color="success">
-        </Alert>
+        
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
