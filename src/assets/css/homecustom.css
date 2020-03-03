@@ -5,8 +5,9 @@
 /* Background Gradient */
 
 .section-shaped .shape-style-1.shape-default {
-    background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%);
-    background: linear-gradient(to right, #FFC371, #FF5F6D);
+    /* background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%); */
+    background-image: linear-gradient(-78deg,#91e0cf 6%,#22c3a0 48%,#bce8a1 100%);
+    /* background: linear-gradient(to right, #FFC371, #FF5F6D); */
 
 }
 .section-shaped .shape + .container{
@@ -172,7 +173,7 @@
     font-weight: 500;
 }
 .headroom--not-top{
-    background-color: #efeae5 !important;
+    background-color:  rgba(239, 234, 229, 0.5) !important;
 }
 .about-section{
     height: 400px !important;
@@ -205,7 +206,7 @@
     height: 150px !important;
     width: 150px !important;
     text-align: center;
-    box-shadow: 0px 0px 5px rgb(0,0,10,0.4);
+    box-shadow: 0px 0px 10px rgb(0,0,10,0.4);
 }
 
 .contact-card-header{
@@ -217,6 +218,13 @@
     padding-left: 20px !important;
 }
 
+.footer-social{
+    text-align: left !important;
+}
+
+.submit-btn{
+    padding:10px 25px !important;
+}
 
 /* Responsive CSS */
 
@@ -270,6 +278,12 @@
 .home-banner-icons{
     height: 140px !important;
     width: 140px !important;
+}
+.team-image{
+    height: 140px !important;
+}
+.footer-social{
+    font-size: 14px !important;
 }
 }
 @media only screen and (max-width: 768px) {

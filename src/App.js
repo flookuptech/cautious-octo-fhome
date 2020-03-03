@@ -1,5 +1,8 @@
-import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import React,{Suspense} from "react";
+import { BrowserRouter,
+   Route,
+   Switch,
+   Redirect } from "react-router-dom";
 
 import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
@@ -11,10 +14,12 @@ import Landing from "views/examples/Landing.jsx";
 import Login from "views/examples/Login.jsx";
 import Profile from "views/examples/Profile.jsx";
 import Register from "views/examples/Register.jsx";
+import Loader from "components/Loader/loader";
 
 function App() {
   return (
     <BrowserRouter>
+        <Suspense fallback={<Loader/>}>
       <Switch>
         <Route path="/" exact render={props => <Index {...props} />} />
         <Route path="/about"
@@ -43,6 +48,7 @@ function App() {
         />
         <Redirect to="/" />
       </Switch>
+      </Suspense>
     </BrowserRouter>
   );
 }

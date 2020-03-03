@@ -17,7 +17,7 @@ const Fintech = () => {
             <img
               alt="..."
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/desktop.png")}
+              src={require("assets/img/theme/fintech2.png")}
             />
           </Col>
           <Col className="order-md-1" md="8">

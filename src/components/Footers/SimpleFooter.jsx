@@ -31,6 +31,9 @@ class SimpleFooter extends React.Component {
                 </h4>
               </Col>
               <Col className=" text-lg-center btn-wrapper" lg="6">
+                <Row>
+                  <Col lg="12" className="footer-social">
+                <span>Chat With Us </span>
               <Button
                   className=" btn-neutral btn-icon-only btn-round ml-1"
                   href="//api.whatsapp.com/send?phone=919967110003&text=I'm interested"
@@ -41,8 +44,24 @@ class SimpleFooter extends React.Component {
                 >
                   <i className=" fa fa-whatsapp" />
                 </Button>
+                <span>Connect with us on</span>
+                <Button
+                  className=" btn-neutral btn-icon-only btn-round ml-1"
+                  color="linkedin"
+                  href="https://www.linkedin.com/company/f-lookup-advisors/"
+                  id="tooltip568564532"
+                  size="lg"
+                  target="_blank"
+                >
+                  <i className=" fa fa-linkedin" />
+                </Button>
+                </Col>
+                {/* </Row>
+                <Row> */}
+                  <Col lg="12" className="footer-social" style={{paddingTop:40}}>
+                <span>Also follow us on </span>
                 <UncontrolledTooltip delay={0} target="tooltip126536701">
-                  Connect on
+                  Chat with us
                 </UncontrolledTooltip>
                 <Button
                   className=" btn-neutral btn-icon-only btn-round"
@@ -70,16 +89,7 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip383967593">
                   Like us
                 </UncontrolledTooltip>
-                <Button
-                  className=" btn-neutral btn-icon-only btn-round ml-1"
-                  color="linkedin"
-                  href="https://www.linkedin.com/company/f-lookup-advisors/"
-                  id="tooltip568564532"
-                  size="lg"
-                  target="_blank"
-                >
-                  <i className=" fa fa-linkedin" />
-                </Button>
+                
                 <UncontrolledTooltip delay={0} target="tooltip568564532">
                   Connect us
                 </UncontrolledTooltip>
@@ -96,6 +106,8 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip626177562">
                   Follow us
                 </UncontrolledTooltip>
+                </Col>
+                </Row>
               </Col>
             </Row>
             <hr />
