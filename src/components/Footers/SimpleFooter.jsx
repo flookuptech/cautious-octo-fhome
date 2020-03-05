@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import About from "../about";
 import '../../assets/css/homecustom.css'
+import Brand from '../../assets/img/theme/logo.gif'
 
 class SimpleFooter extends React.Component {
   render() {
@@ -21,8 +22,8 @@ class SimpleFooter extends React.Component {
       <>
         <footer className=" footer">
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
-              <Col lg="6">
+            <Row className=" row-grid footer-grid align-items-center mb-5">
+              <Col md="6" lg="6">
                 {/* <h3 className=" text-primary font-weight-light mb-2">
                   Thank you for supporting us!
                 </h3> */}
@@ -30,7 +31,7 @@ class SimpleFooter extends React.Component {
                   Let's get in touch on any of these platforms.
                 </h4>
               </Col>
-              <Col className=" text-lg-center btn-wrapper" lg="6">
+              <Col className=" text-lg-center btn-wrapper" md="6" lg="6">
                 <Row>
                   <Col lg="12" className="footer-social">
                 <span>Chat With Us </span>
@@ -42,7 +43,7 @@ class SimpleFooter extends React.Component {
                   target="_blank"
                   style={{background:"#128C7E",borderColor:"#128C7E",color:"#fff"}}
                 >
-                  <i className=" fa fa-whatsapp" />
+                  <i className="fa fa-whatsapp" />
                 </Button>
                 <span>Connect with us on</span>
                 <Button
@@ -56,9 +57,8 @@ class SimpleFooter extends React.Component {
                   <i className=" fa fa-linkedin" />
                 </Button>
                 </Col>
-                {/* </Row>
-                <Row> */}
-                  <Col lg="12" className="footer-social" style={{paddingTop:40}}>
+                
+                  <Col xs="12" lg="12" className="footer-social" style={{paddingTop:40}}>
                 <span>Also follow us on </span>
                 <UncontrolledTooltip delay={0} target="tooltip126536701">
                   Chat with us
@@ -112,7 +112,7 @@ class SimpleFooter extends React.Component {
             </Row>
             <hr />
             <Row>
-            <Col xs="12" md="4" lg="4">
+            <Col xs="12" md="6" lg="6">
             <div className="about">
               <Link to= {"/"}>
                 Home
@@ -128,12 +128,12 @@ class SimpleFooter extends React.Component {
                 </div>
                 </div>  
                 </Col>   
-                <Col xs="12" md="8" lg="8">
+                <Col xs="12" md="6" lg="6">
               <div className=" footer-contact">
-               702 (L), Hubtown Solaris
+               702 (L), Hubtown Solaris,
                NS Phadke Marg,<br />
                Andheri East West Flyover
-               Andheri East,
+               Andheri East,<br/>
                Mumbai, Maharashtra 400069<br/>
                <a href = "tel: +91 9930854822">Phone: +91-9967110003</a><br/>
                <a href = "mailto: contact@flookup.com">Email: contact@flookup.com</a>
@@ -147,7 +147,8 @@ class SimpleFooter extends React.Component {
                   <a href={null} target="_blank">
                     F-LookUp
                   </a>
-                  .
+                  &nbsp;
+                  <img style={{height:28}} src={Brand}/>
                 </div>
               </Col>
              

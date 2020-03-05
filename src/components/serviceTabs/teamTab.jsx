@@ -20,7 +20,7 @@ class TeamTab extends React.Component {
     return (
       <>
         <Row>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -30,11 +30,11 @@ class TeamTab extends React.Component {
                           />
                           <p className="team-name">
                               Vaibhav Mandhana                             
-                          </p>                         
+                          </p>                        
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -48,7 +48,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -62,7 +62,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -76,9 +76,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                </Row>
-                <Row>
-                <Col xs="6" lg="3" className="team-section">
+                   <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -92,7 +90,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -106,7 +104,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -120,7 +118,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -134,9 +132,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                </Row>
-                <Row>
-                <Col xs="6" lg="3" className="team-section">
+                   <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -150,7 +146,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -164,7 +160,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -178,7 +174,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -192,9 +188,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                </Row>
-                <Row>
-                <Col xs="6" lg="3" className="team-section">
+                   <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -208,7 +202,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -222,7 +216,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -236,7 +230,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -250,9 +244,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                </Row>
-                <Row className="justify-content-md-center">               
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img
@@ -266,7 +258,7 @@ class TeamTab extends React.Component {
                       </div>
                       </div>
                     </Col>
-                    <Col xs="6" lg="3" className="team-section">
+                    <Col xs="6" md="4" lg="3" className="team-section">
                     <div className="px-4">
                       <div className="card-profile-image">
                         <img

@@ -15,6 +15,7 @@ import Login from "views/examples/Login.jsx";
 import Profile from "views/examples/Profile.jsx";
 import Register from "views/examples/Register.jsx";
 import Loader from "components/Loader/loader";
+import Infographics from "components/infographics";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route path="/about"
          exact
          render={props => <About {...props} />}
+         />
+         <Route path="/infographics"
+         exact
+         render={props => <Infographics {...props} />}
          />
         <Route
           path="/landing-page"

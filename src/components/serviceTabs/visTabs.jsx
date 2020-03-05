@@ -8,8 +8,10 @@ import {
   NavLink,
   Nav,
   TabContent,
-  TabPane
+  TabPane,
+  Button
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class VisTabs extends React.Component {
   state = {
@@ -100,6 +102,11 @@ class VisTabs extends React.Component {
                 <p className="description">
                   Lorem Ipsum
                 </p>
+                {/* <Link to="/infographics">
+                <Button>
+                  View More
+                </Button>
+                </Link> */}
               </TabPane>
             </TabContent>
           </CardBody>
