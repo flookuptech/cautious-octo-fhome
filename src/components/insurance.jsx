@@ -17,7 +17,7 @@ const Insurance = () => {
           <Col className="order-md-2" md="4">
             <img
               alt="..."
-              className="img-fluid section-image-styles floating"
+              className="img-fluid section-image-styles insurance-img floating"
               src={require("assets/img/theme/insurance_green.png")}
             />
           </Col>
@@ -28,7 +28,7 @@ const Insurance = () => {
                 <FontAwesomeIcon icon={faHeartbeat} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Insurance</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Insurance</h1>
               <InsuranceTabs />
               <ContactForm/>
               </div>

@@ -26,7 +26,7 @@ const Services = () => {
                 <FontAwesomeIcon icon={faToolbox} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Services</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Services</h1>
               <ServicesTabs />
               <ContactForm/>
               </div>

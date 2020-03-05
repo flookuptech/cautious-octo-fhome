@@ -27,7 +27,7 @@ const Fintech = () => {
                 <FontAwesomeIcon icon={faLaptopCode} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>FinTech & Automation</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>FinTech & Automation</h1>
               <FinTechTabs />
               <ContactForm />
               </div>

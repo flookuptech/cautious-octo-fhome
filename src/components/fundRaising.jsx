@@ -28,7 +28,7 @@ const FundRaising = () => {
                 <FontAwesomeIcon icon={faSearchDollar} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Fund Raising</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Fund Raising</h1>
               <FundTabs />
               <ContactForm/>
               </div>

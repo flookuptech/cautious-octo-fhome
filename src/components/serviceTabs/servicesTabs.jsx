@@ -8,19 +8,25 @@ import {
   NavLink,
   Nav,
   TabContent,
-  TabPane
+  TabPane,
+  Button
 } from "reactstrap";
 
 class ServicesTabs extends React.Component {
   state = {
     tabs: 1
   };
+  
   toggleNavs = (e, state, index) => {
     e.preventDefault();
     this.setState({
       [state]: index
+      
     });
   };
+
+  
+
   render() {
     return (
       <>
@@ -77,7 +83,8 @@ class ServicesTabs extends React.Component {
               >
                 Compliance Health Care
               </NavLink>
-            </NavItem>
+            </NavItem> 
+
             <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 4}
@@ -145,6 +152,7 @@ class ServicesTabs extends React.Component {
             </NavItem>
           </Nav>
         </div>
+        
         <Card className="shadow">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>

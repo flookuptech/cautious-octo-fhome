@@ -44,7 +44,7 @@ import ContactForm from "./Modal/contactForm";
                 <FontAwesomeIcon icon={faChalkboardTeacher} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Virtual CFO</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Virtual CFO</h1>
               <CfoTabs />
               <ContactForm/>
               </div>

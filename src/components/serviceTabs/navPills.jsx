@@ -28,8 +28,9 @@ import {
          <Nav className="nav-pills-circle" id="tabs_2" pills role="tablist">
          <Container>
            <Row className="justify-content-md-center">
-              <Col md="3" xs="6" lg="3" className="align-items-center">
-               <NavItem className="banner-pills">
+              <Col md="3" xs="6" lg="2" className="align-items-center">
+               <a href="#">
+                 <NavItem className="banner-pills">
                 <Link
                     activeClass="active"
                     to="fintech"
@@ -44,9 +45,11 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
               </Col>
-              <Col md="3" xs="6" lg="3" className="align-items-center">
-              <NavItem className="banner-pills">
+              <Col md="3" xs="6" lg="2" className="align-items-center">
+              <a href="#">
+                <NavItem className="banner-pills">
               <Link
                     activeClass="active"
                     to="valuations"
@@ -61,8 +64,10 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
               </Col>
-              <Col md="3" xs="6" lg="3" className="align-items-center">
+              <Col md="3" xs="6" lg="2" className="align-items-center">
+              <a href="#">
               <NavItem className="banner-pills">
               <Link
                     activeClass="active"
@@ -78,8 +83,10 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
               </Col>
-              <Col md="3" xs="6" lg="3" className="align-items-center">
+              <Col md="3" xs="6" lg="2" className="align-items-center">
+              <a href="#">
               <NavItem className="banner-pills">
               <Link
                     activeClass="active"
@@ -95,12 +102,14 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
               </Col>
 
         </Row>
         <Row>&nbsp;</Row>
-        <Row>
-            <Col xs="6" md="3">
+        <Row className="justify-content-md-center">
+            <Col xs="6" md="3" lg="2">
+            <a href="#">
             <NavItem className="banner-pills">
             <Link
                     activeClass="active"
@@ -116,8 +125,10 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
             </Col>
-            <Col xs="6" md="3">
+            <Col xs="6" md="3" lg="2">
+            <a href="#">
             <NavItem className="banner-pills">
             <Link
                     activeClass="active"
@@ -133,8 +144,10 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
             </Col>
-            <Col xs="6" md="3">
+            <Col xs="6" md="3" lg="2">
+            <a href="#">
             <NavItem className="banner-pills">
             <Link
                     //activeClass="active"
@@ -150,8 +163,10 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
             </Col>
-            <Col xs="6" md="3">
+            <Col xs="6" md="3" lg="2">
+            <a href="#">
             <NavItem className="banner-pills">
             <Link
                     activeClass="active"
@@ -167,6 +182,7 @@ import {
                 </span>
                </Link>
               </NavItem>
+              </a>
             </Col>
         </Row>
      </Container>

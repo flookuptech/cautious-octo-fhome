@@ -10,6 +10,7 @@ import {
   TabContent,
   TabPane
 } from "reactstrap";
+import Monk from "../../assets/img/theme/monk-jobs.png"
 
 class RecruitmentTabs extends React.Component {
   state = {
@@ -63,6 +64,10 @@ class RecruitmentTabs extends React.Component {
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
+              {/* <div style={{textAlign:"center",height:80}}>
+                <img src={Monk} style={{height:80}} />
+                </div> */}
+                <br/>
                 <p className="description">
                   Raw denim you probably haven't heard of them jean shorts
                   Austin. Nesciunt tofu stumptown aliqua, retro synth master
@@ -77,29 +82,14 @@ class RecruitmentTabs extends React.Component {
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
+              {/* <div style={{textAlign:"center",height:80}}>
+                <img src={Monk} style={{height:80}}/>
+                </div> */}
+                <br/>
                 <p className="description">
                   Cosby sweater eu banh mi, qui irure terry richardson ex
                   squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
                   quis cardigan american apparel, butcher voluptate nisi qui.
-                </p>
-              </TabPane>
-              <TabPane tabId="tabs3">
-                <p className="description">
-                  Test
-                </p>
-              </TabPane>
-              <TabPane tabId="tabs4">
-                <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
-                </p>
-              </TabPane>
-              <TabPane tabId="tabs5">
-                <p className="description">
-                  Test
                 </p>
               </TabPane>
             </TabContent>

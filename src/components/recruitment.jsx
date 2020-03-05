@@ -27,7 +27,7 @@ const Recruitment = () => {
                 <FontAwesomeIcon icon={faUserGraduate} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Recruitment</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Recruitment</h1>
               <RecruitmentTabs />
               <ContactForm/>
               </div>

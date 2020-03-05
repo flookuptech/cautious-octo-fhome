@@ -17,7 +17,7 @@ const Valuations = () => {
             <img
               alt="..."
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/valuation.png")}
+              src={require("assets/img/theme/valuation3.png")}
             />
           </Col>
           <Col className="order-md-1" md="8">
@@ -27,7 +27,7 @@ const Valuations = () => {
                 <FontAwesomeIcon icon={faHandHoldingUsd} />
               </div>
               </div>
-              <h3 style={{textAlign:"center", fontWeight:"bold"}}>Valuations</h3>
+              <h1 style={{textAlign:"center", fontWeight:"bold"}}>Valuations</h1>
               <ValuationTabs />
               <ContactForm/>
               </div>
