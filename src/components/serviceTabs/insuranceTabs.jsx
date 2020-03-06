@@ -44,7 +44,7 @@ class InsuranceTabs extends React.Component {
                 Life Insurance
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 2}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -57,7 +57,7 @@ class InsuranceTabs extends React.Component {
                 Health Insurance
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 3}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -70,7 +70,7 @@ class InsuranceTabs extends React.Component {
                 General Insurance
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 4}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -83,7 +83,7 @@ class InsuranceTabs extends React.Component {
                 Mutual Funds
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 5}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {

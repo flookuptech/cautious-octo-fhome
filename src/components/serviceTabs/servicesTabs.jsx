@@ -45,7 +45,7 @@ class ServicesTabs extends React.Component {
                 FINTECH
               </NavLink>
               </NavItem> */}
-              <NavItem>
+              <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 1}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -58,7 +58,7 @@ class ServicesTabs extends React.Component {
                 Audit Assistance
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 2}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -71,7 +71,7 @@ class ServicesTabs extends React.Component {
                 GST Consulting
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 3}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -85,7 +85,7 @@ class ServicesTabs extends React.Component {
               </NavLink>
             </NavItem> 
 
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 4}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -98,7 +98,7 @@ class ServicesTabs extends React.Component {
                 Due Diligence
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 5}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -111,7 +111,7 @@ class ServicesTabs extends React.Component {
                 International Taxation
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 6}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -124,7 +124,7 @@ class ServicesTabs extends React.Component {
                 Outsourcing
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 7}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
@@ -137,7 +137,7 @@ class ServicesTabs extends React.Component {
                 Management Consulting
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 8}
                 className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
