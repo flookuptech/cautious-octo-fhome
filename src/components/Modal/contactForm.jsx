@@ -18,7 +18,8 @@ import Logo from "../../assets/img/theme/Logo.png"
 
 class ContactForm extends React.Component {
   state = {
-    defaultModal: false
+    defaultModal: false,
+    status:""
   };
   toggleModal = state => {
     this.setState({
@@ -27,8 +28,31 @@ class ContactForm extends React.Component {
   };
 
   
+
+  
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+
   
   render() {
+    const { status } = this.state;
+    this.submitForm = this.submitForm.bind(this);
     return (
       <>
       <Button
@@ -57,7 +81,10 @@ class ContactForm extends React.Component {
                     </div>
                   </CardHeader>
                   <CardBody className="px-lg-5 py-lg-5">
-                    <Form role="form" method="POST">
+                    <Form role="form"
+                      onSubmit={this.submitForm}
+                      action="https://formspree.io/xnqvwaeo"
+                      method="POST">
                         <FormGroup>
                         <InputGroup className="input-group-alternative">
                           <InputGroupAddon addonType="prepend">
@@ -78,6 +105,16 @@ class ContactForm extends React.Component {
                           <Input placeholder="Email" id="email" name="email" type="email" />
                         </InputGroup>
                       </FormGroup>
+                      <FormGroup className="mb-3">
+                        <InputGroup className="input-group-alternative">
+                          <InputGroupAddon addonType="prepend">
+                            <InputGroupText>
+                              <i className="ni ni-chat-round" />
+                            </InputGroupText>
+                          </InputGroupAddon>
+                          <Input placeholder="Message" id="message" name="message" type="message" />
+                        </InputGroup>
+                      </FormGroup>
                       <FormGroup>
                         <InputGroup className="input-group-alternative">
                           <InputGroupAddon addonType="prepend">
@@ -89,13 +126,15 @@ class ContactForm extends React.Component {
                         </InputGroup>
                       </FormGroup>
                       <div className="text-center">
+                      {status === "SUCCESS" ? <p>Thanks!</p> : 
                         <Button
                           className="my-4 btn11 submit-btn"
                           color="primary"
                           type="submit"
                         >
                           Submit
-                        </Button>
+                        </Button>}
+                        {status === "ERROR" && <p style={{paddingTop:30}}>Ooops! There was an error.</p>}
                       </div>
                     </Form>
                   </CardBody>

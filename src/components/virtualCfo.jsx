@@ -27,7 +27,7 @@ import ContactForm from "./Modal/contactForm";
 
   return (
      <>
-   <section id="cfo" className="section bg-white">
+   <section id="cfo" className="section bg-white renewal-padding">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">

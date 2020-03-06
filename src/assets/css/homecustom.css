@@ -70,7 +70,7 @@
     color: #313030 !important;
     padding-top: 10px;
     font-size: 17px !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 .banner-pills > a.active{
     background-color: #fff !important;
@@ -235,20 +235,38 @@
     margin-bottom: 0px !important;
 }
 
-#more{
-    display: none;
+.section-background-fill{
+    background: #f9f9f9 !important;
 }
+
+.service-pills-padding{
+    padding-bottom: 10px !important;
+}
+
+.footer-background{
+    background: #e7efff !important;
+}
+
+
 
 
 /* Desktop Responsive CSS */
 
 @media screen and (min-width: 1025px) {
-.section-image-styles{
+    
+    .valuation-img{
+        height: 600px !important;
+        width: 500px !important;
+        max-width: none !important;
+    }
+    
+    .section-image-styles{
     height: 450px !important;
     width: 450px !important;
     max-width: none !important;
 }
-.insurance-img{
+
+    .insurance-img{
     height: 400px !important;
     width: 450px !important;
     max-width: none !important;
