@@ -10,7 +10,7 @@ import ContactForm from "./Modal/contactForm";
 
 const Valuations = () => {
   return (
-    <section id="valuations" className="section section-background-fill bg-white renewal-padding">
+    <section id="valuations" className="section section-background-fill section-lg bg-gradient-secondary section-padding background-white">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">

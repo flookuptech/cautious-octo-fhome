@@ -27,7 +27,7 @@ class SimpleFooter extends React.Component {
                 {/* <h3 className=" text-primary font-weight-light mb-2">
                   Thank you for supporting us!
                 </h3> */}
-                <h4 className="text-primary mb-0 font-weight-light">
+                <h4 className="text-primary footer-text mb-0 font-weight-light">
                   Let's get in touch on any of these platforms.
                 </h4>
               </Col>
@@ -135,6 +135,7 @@ class SimpleFooter extends React.Component {
                Andheri East West Flyover
                Andheri East,<br/>
                Mumbai, Maharashtra 400069<br/>
+               <i class="fa fa-map-marker"></i>&nbsp;<a href="https://g.page/financelookup?share" target="_blank">Find us on Map</a><br/>
                <a href = "tel: +91 9930854822">Phone: +91-9967110003</a><br/>
                <a href = "mailto: contact@flookup.com">Email: contact@flookup.com</a>
                 </div>

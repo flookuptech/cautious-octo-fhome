@@ -7,10 +7,11 @@ import {
 import '../assets/css/homecustom.css';
 import FundTabs from "./serviceTabs/fundTabs";
 import ContactForm from "./Modal/contactForm";
+import BackgroundWave from "./backgroundWave";
 
 const FundRaising = () => {
   return (
-    <section id="fund" className="section section-background-fill section-lg bg-gradient-secondary section-padding background-white">
+    <section id="fund" className="section section-background-fill section-lg bg-gradient-secondary fund-section section-padding background-white">
         
       <Container>
         <Row className="row-grid align-items-center">
@@ -35,6 +36,7 @@ const FundRaising = () => {
           </Col>
         </Row>
       </Container>
+      <BackgroundWave/>
     </section>
   );
 };

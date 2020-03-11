@@ -27,6 +27,7 @@ import Insurance from "components/insurance";
 import Recruitment from "components/recruitment";
 import Visualizations from "components/visualizations";
 import FundRaising from "components/fundRaising";
+import BackgroundWave from "components/backgroundWave";
 
 // index page sections
 
@@ -49,7 +50,6 @@ class Landing extends React.Component {
           <FinTech />
           {/* <WhatsappBar /> */}
           <Valuations />
-          <RatingsBar />
           <VirtualCfo />
           <Services />
           <Insurance/>

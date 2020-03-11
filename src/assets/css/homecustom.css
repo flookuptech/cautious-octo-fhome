@@ -244,7 +244,16 @@
 }
 
 .footer-background{
-    background: #e7efff !important;
+    background: #fff !important;
+}
+
+.fund-section{
+    padding-bottom: 0px !important;
+}
+
+.footer-text{
+    color: #4eae6f !important;
+    font-weight: 400 !important;
 }
 
 
@@ -340,3 +349,12 @@
   }
 
   /* Mobile CSS End */
+
+.css-1sqkuj2 {
+    padding-bottom: 26.5%;
+    bottom: calc(100% - 2px);
+    background-image: url(https://res.cloudinary.com/hilnmyskv/image/upload/q_auto/v1583156113/Algolia_com_Website_assets/images/shared/footer-waves.svg);
+    background-size: 100% 100%;
+}
+
+
