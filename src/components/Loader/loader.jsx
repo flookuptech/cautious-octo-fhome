@@ -1,7 +1,17 @@
 import React from 'react';
-import { RollBoxLoading } from 'react-loadingg';
+import { Container, Row, Col } from 'reactstrap';
 
-const Loader = () => <RollBoxLoading />;
+const Loader = () => 
+
+  <Container>
+      <Row className="justify-content-md-center">    
+       <Col lg="12" style={{textAlign:"center", top:"50%", position:"fixed"}}> 
+        <div>  
+         <img src={require("assets/img/theme/flookupGif.gif")} alt="loader" style={{height:100}} />
+        </div>
+       </Col>
+      </Row>
+  </Container>
 
 export default Loader;
 

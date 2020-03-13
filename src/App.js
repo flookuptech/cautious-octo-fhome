@@ -1,4 +1,4 @@
-import React,{Suspense} from "react";
+import React,{Suspense, lazy} from "react";
 import { BrowserRouter,
    Route,
    Switch,
@@ -8,19 +8,19 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 
-import Index from "views/Index.jsx";
-import About from "./components/about";
-import Landing from "views/examples/Landing.jsx";
-import Login from "views/examples/Login.jsx";
-import Profile from "views/examples/Profile.jsx";
-import Register from "views/examples/Register.jsx";
 import Loader from "components/Loader/loader";
-import Infographics from "components/infographics";
 
-function App() {
+class App extends React.Component {
+  render(){
+
+    const Index = lazy(() => import("../src/views/Index"));
+    const About = lazy(() => import("../src/components/about"));
+    const Infographics = lazy(() => import("../src/components/infographics"));
+
+
   return (
     <BrowserRouter>
-        <Suspense fallback={<Loader/>}>
+     <Suspense fallback={<Loader/>}>
       <Switch>
         <Route path="/" exact render={props => <Index {...props} />} />
         <Route path="/about"
@@ -31,57 +31,13 @@ function App() {
          exact
          render={props => <Infographics {...props} />}
          />
-        <Route
-          path="/landing-page"
-          exact
-          render={props => <Landing {...props} />}
-        />
-        <Route
-          path="/login-page"
-          exact
-          render={props => <Login {...props} />}
-        />
-        <Route
-          path="/profile-page"
-          exact
-          render={props => <Profile {...props} />}
-        />
-        <Route
-          path="/register-page"
-          exact
-          render={props => <Register {...props} />}
-        />
         <Redirect to="/" />
       </Switch>
       </Suspense>
     </BrowserRouter>
   );
+  }
 }
 
 export default App;
 
-// ReactDOM.render(
-//   <BrowserRouter>
-//     <Switch>
-//       <Route path="/" exact render={props => <Index {...props} />} />
-//       <Route
-//         path="/landing-page"
-//         exact
-//         render={props => <Landing {...props} />}
-//       />
-//       <Route path="/login-page" exact render={props => <Login {...props} />} />
-//       <Route
-//         path="/profile-page"
-//         exact
-//         render={props => <Profile {...props} />}
-//       />
-//       <Route
-//         path="/register-page"
-//         exact
-//         render={props => <Register {...props} />}
-//       />
-//       <Redirect to="/" />
-//     </Switch>
-//   </BrowserRouter>,
-//   document.getElementById("root")
-// );

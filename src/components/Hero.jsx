@@ -58,7 +58,7 @@ class Hero extends React.Component {
                     </h1> 
                   </Col>
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center home-section">
                   <Col lg="12" xs="12">
                   <NavPills />
                   </Col>

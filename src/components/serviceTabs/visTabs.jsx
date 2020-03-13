@@ -8,10 +8,8 @@ import {
   NavLink,
   Nav,
   TabContent,
-  TabPane,
-  Button
+  TabPane
 } from "reactstrap";
-import { Link } from "react-router-dom";
 
 class VisTabs extends React.Component {
   state = {

@@ -10,7 +10,6 @@ import {
   TabContent,
   TabPane
 } from "reactstrap";
-import Monk from "../../assets/img/theme/monk-jobs.png"
 
 class RecruitmentTabs extends React.Component {
   state = {

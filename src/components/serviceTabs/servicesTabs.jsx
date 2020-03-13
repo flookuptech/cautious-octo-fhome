@@ -9,12 +9,13 @@ import {
   Nav,
   TabContent,
   TabPane,
-  Button
+  Button,
+  UncontrolledCollapse
 } from "reactstrap";
 
 class ServicesTabs extends React.Component {
   state = {
-    tabs: 1
+    tabs: 1,
   };
   
   toggleNavs = (e, state, index) => {
@@ -24,10 +25,13 @@ class ServicesTabs extends React.Component {
       
     });
   };
-
-  
+   
+  changeValue(e) {
+    this.setState({dropDownValue: e.currentTarget.textContent})
+  }
 
   render() {
+
     return (
       <>
         <div className="nav-wrapper">
@@ -37,14 +41,6 @@ class ServicesTabs extends React.Component {
             pills
             role="tablist"
           >
-            {/* <NavItem>
-              <NavLink
-                disabled
-                href="#"
-              >
-                FINTECH
-              </NavLink>
-              </NavItem> */}
               <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 1}
@@ -85,6 +81,30 @@ class ServicesTabs extends React.Component {
               </NavLink>
             </NavItem> 
 
+            {/* <UncontrolledDropdown direction="right">
+          <DropdownToggle className="services-dropdown" caret color="primary">
+            View More
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 4)}>
+              Due Diligence
+            </DropdownItem>
+            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 5)}>
+              International Taxation
+            </DropdownItem>
+            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 6)}>
+              Outsourcing
+            </DropdownItem>
+            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 7)}>
+              Management Consulting
+            </DropdownItem>
+            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 8)}>
+              Debt Syndication
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown> */}
+        <Button color="primary" id="toggle" style={{ marginBottom: '1rem', height:45 }}>Few More Services</Button>
+      <UncontrolledCollapse toggler="#toggle">
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 4}
@@ -150,6 +170,7 @@ class ServicesTabs extends React.Component {
                 Debt Syndication
               </NavLink>
             </NavItem>
+            </UncontrolledCollapse>
           </Nav>
         </div>
         
@@ -184,31 +205,27 @@ class ServicesTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs4">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
+                  Due Diligence
                 </p>
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                  Lorem Ipsum
+                  International Taxation
                 </p>
               </TabPane>
               <TabPane tabId="tabs6">
                 <p className="description">
-                  Lorem Ipsum
+                  Outsourcing
                 </p>
               </TabPane>
               <TabPane tabId="tabs7">
                 <p className="description">
-                  Lorem Ipsum
+                  Management Consulting
                 </p>
               </TabPane>
               <TabPane tabId="tabs8">
                 <p className="description">
-                  Lorem Ipsum
+                  Debt Syndication
                 </p>
               </TabPane>
             </TabContent>

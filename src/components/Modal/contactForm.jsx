@@ -14,7 +14,7 @@ import {
   Modal
 } from "reactstrap";
 
-import Logo from "../../assets/img/theme/Logo.png"
+import Logo from "../../assets/img/theme/logo-01.png"
 
 class ContactForm extends React.Component {
   state = {
@@ -73,7 +73,7 @@ class ContactForm extends React.Component {
                 <Card className="bg-secondary shadow border-0">
                   <CardHeader className="bg-transparent pb-5 contact-card-header" >
                     <div className="text-muted text-center mt-2 mb-3">
-                    <img src={Logo} alt="logo" style={{height:30,width:90}} />
+                    <img src={Logo} alt="logo" style={{height:90}} />
                     <br/>
                     <br/>
                       <p style={{fontSize:20}}>Contact Form</p>

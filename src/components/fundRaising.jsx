@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Alert } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
  faSearchDollar

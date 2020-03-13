@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Alert } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
      faChartLine
@@ -19,6 +19,7 @@ const Visualizations = () => {
               alt="..."
               className="img-fluid section-image-styles floating"
               src={require("assets/img/theme/Data_green.png")}
+              loading="lazy"
             />
           </Col>
           <Col className="order-md-1" md="8">
