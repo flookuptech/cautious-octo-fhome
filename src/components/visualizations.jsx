@@ -10,13 +10,13 @@ import ContactForm from "./Modal/contactForm";
 
 const Visualizations = () => {
   return (
-    <section id="visualization" className="section section-lg bg-gradient-secondary section-padding background-white">
+    <section id="visualization" className="section section-lg section-padding background-white">
         
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
+              alt="visualization"
               className="img-fluid section-image-styles floating"
               src={require("assets/img/theme/Data_green.png")}
               loading="lazy"

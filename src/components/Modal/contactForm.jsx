@@ -73,7 +73,7 @@ class ContactForm extends React.Component {
                 <Card className="bg-secondary shadow border-0">
                   <CardHeader className="bg-transparent pb-5 contact-card-header" >
                     <div className="text-muted text-center mt-2 mb-3">
-                    <img src={Logo} alt="logo" style={{height:90}} />
+                    <img src={Logo} alt="flookup" style={{height:55}} />
                     <br/>
                     <br/>
                       <p style={{fontSize:20}}>Contact Form</p>
@@ -92,7 +92,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-single-02" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Name" id="name" name="name" type="name" required />
+                          <Input className="input-placeholder-style" placeholder="Name" id="name" name="name" type="name" required />
                         </InputGroup>
                         </FormGroup>
                       <FormGroup className="mb-3">   
@@ -102,7 +102,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-email-83" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Email" id="email" name="email" type="email" required />
+                          <Input className="input-placeholder-style"  placeholder="Email" id="email" name="email" type="email" required />
                         </InputGroup>
                       </FormGroup>
                       <FormGroup className="mb-3">
@@ -112,7 +112,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-chat-round" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Message" id="message" name="message" type="message" required />
+                          <Input className="input-placeholder-style"  placeholder="Message" id="message" name="message" type="message" required />
                         </InputGroup>
                       </FormGroup>
                       <FormGroup>
@@ -122,7 +122,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-tablet-button" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Contact Number" id="contact" name="contact" type="tel" pattern="[0-9]{10}" required />
+                          <Input className="input-placeholder-style"  placeholder="Contact Number" id="contact" name="contact" type="tel" pattern="[0-9]{10}" required />
                         </InputGroup>
                       </FormGroup>
                       <div className="text-center">

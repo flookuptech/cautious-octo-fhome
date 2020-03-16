@@ -44,7 +44,7 @@ class ServicesTabs extends React.Component {
               <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 1}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 1
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 1)}
@@ -57,7 +57,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 2}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 2
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 2)}
@@ -70,7 +70,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 3}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 3
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 3)}
@@ -79,36 +79,11 @@ class ServicesTabs extends React.Component {
               >
                 Compliance Health Care
               </NavLink>
-            </NavItem> 
-
-            {/* <UncontrolledDropdown direction="right">
-          <DropdownToggle className="services-dropdown" caret color="primary">
-            View More
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 4)}>
-              Due Diligence
-            </DropdownItem>
-            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 5)}>
-              International Taxation
-            </DropdownItem>
-            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 6)}>
-              Outsourcing
-            </DropdownItem>
-            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 7)}>
-              Management Consulting
-            </DropdownItem>
-            <DropdownItem href="#pablo" onClick={e => this.toggleNavs(e, "tabs", 8)}>
-              Debt Syndication
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown> */}
-        <Button color="primary" id="toggle" style={{ marginBottom: '1rem', height:45 }}>Few More Services</Button>
-      <UncontrolledCollapse toggler="#toggle">
+            </NavItem>        
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 4}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 4
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 4)}
@@ -121,7 +96,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 5}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 5
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 5)}
@@ -134,7 +109,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 6}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 6
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 6)}
@@ -147,7 +122,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 7}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 7
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 7)}
@@ -160,7 +135,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 8}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 8
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 8)}
@@ -170,11 +145,10 @@ class ServicesTabs extends React.Component {
                 Debt Syndication
               </NavLink>
             </NavItem>
-            </UncontrolledCollapse>
           </Nav>
         </div>
         
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">

@@ -27,14 +27,14 @@ import ContactForm from "./Modal/contactForm";
 
   return (
      <>
-   <section id="cfo" className="section bg-white renewal-padding">
+   <section id="cfo" className="section section-lg section-padding background-white">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
+              alt="cfo"
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/cfo2.png")}
+              src={require("assets/img/theme/cfo2.svg")}
             />
           </Col>
           <Col className="order-md-1" md="8">

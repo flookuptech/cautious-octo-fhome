@@ -7,7 +7,7 @@ const Loader = () =>
       <Row className="justify-content-md-center">    
        <Col lg="12" style={{textAlign:"center", top:"50%", position:"fixed"}}> 
         <div>  
-         <img src={require("assets/img/theme/flookupGif.gif")} alt="loader" style={{height:100}} />
+         <img src={require("assets/img/theme/flookupGif.gif")} alt="flookup" style={{height:100}} />
         </div>
        </Col>
       </Row>

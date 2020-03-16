@@ -59,7 +59,7 @@ class ValuationTabs extends React.Component {
             </NavItem>
           </Nav>
         </div>
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">

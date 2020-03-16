@@ -34,7 +34,7 @@ class CfoTabs extends React.Component {
               <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 1}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 1
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 1)}
@@ -47,7 +47,7 @@ class CfoTabs extends React.Component {
             <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 2}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 2
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 2)}
@@ -60,7 +60,7 @@ class CfoTabs extends React.Component {
             <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 3}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 3
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 3)}
@@ -73,7 +73,7 @@ class CfoTabs extends React.Component {
             <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 4}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 4
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 4)}
@@ -86,7 +86,7 @@ class CfoTabs extends React.Component {
             <NavItem>
               <NavLink
                 aria-selected={this.state.tabs === 5}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 5
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 5)}
@@ -98,7 +98,7 @@ class CfoTabs extends React.Component {
             </NavItem>
           </Nav>
         </div>
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">

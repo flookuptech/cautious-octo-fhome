@@ -11,14 +11,14 @@ import BackgroundWave from "./backgroundWave";
 
 const FundRaising = () => {
   return (
-    <section id="fund" className="section section-background-fill section-lg bg-gradient-secondary fund-section section-padding background-white">
+    <section id="fund" className="section section-background-fill section-lg fund-section section-padding">
         
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
-              className="img-fluid section-image-styles floating"
+              alt="fundraising"
+              className="img-fluid fund-image-styles floating"
               src={require("assets/img/theme/fund.png")}
             />
           </Col>

@@ -10,14 +10,14 @@ import ContactForm from "./Modal/contactForm";
 
 const Fintech = () => {
   return (
-    <section id="fintech" className="section section-lg bg-gradient-secondary section-padding background-white">
+    <section id="fintech" className="section section-lg section-padding background-white">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
+              alt="fintech"
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/fintech2.png")}
+              src={require("assets/img/theme/fintech2.svg")}
             />
           </Col>
           <Col className="order-md-1" md="8">
@@ -27,7 +27,7 @@ const Fintech = () => {
                 <FontAwesomeIcon icon={faLaptopCode} />
               </div>
               </div>
-              <h1 style={{textAlign:"center", fontWeight:"bold"}}>FinTech & Automation</h1>
+              <h1 className="section-header" style={{textAlign:"center", fontWeight:"bold"}}>FinTech & Automation</h1>
               <FinTechTabs />
               <ContactForm />
               </div>
