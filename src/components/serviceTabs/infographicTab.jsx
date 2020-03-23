@@ -2,8 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
-  Row,
-  Col
+  Row
 } from "reactstrap";
 
 class InfographicTab extends React.Component {

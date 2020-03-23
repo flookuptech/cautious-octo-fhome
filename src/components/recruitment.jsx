@@ -10,14 +10,14 @@ import ContactForm from "./Modal/contactForm";
 
 const Recruitment = () => {
   return (
-    <section id="recruitment" className="section section-background-fill section-lg bg-gradient-secondary section-padding background-white">
+    <section id="recruitment" className="section section-background-fill section-lg section-padding">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
+              alt="recruitment"
               className="img-fluid section-image-styles floating"
-              src={require("assets/img/theme/career2.png")}
+              src={require("assets/img/theme/career2.svg")}
             />
           </Col>
           <Col className="order-md-1" md="8">

@@ -53,12 +53,12 @@ class Hero extends React.Component {
                         <h5 className="header-style">Partner</h5>
                       </Typing>
      
-                    <h1 style={{color:"#000"}} className="display-3 text-white tag-line">
+                    <h1 className="display-3 text-white tag-line">
                       Grow With Us
                     </h1> 
                   </Col>
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center home-section">
                   <Col lg="12" xs="12">
                   <NavPills />
                   </Col>

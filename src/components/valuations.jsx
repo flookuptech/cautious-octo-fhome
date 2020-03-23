@@ -10,14 +10,14 @@ import ContactForm from "./Modal/contactForm";
 
 const Valuations = () => {
   return (
-    <section id="valuations" className="section section-background-fill bg-white renewal-padding">
+    <section id="valuations" className="section section-background-fill section-lg section-padding">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
-              className="img-fluid valuation-img floating"
-              src={require("assets/img/theme/valuation3.png")}
+              alt="valuation"
+              className="img-fluid section-image-styles floating"
+              src={require("assets/img/theme/valuation-new.svg")}
               
             />
           </Col>

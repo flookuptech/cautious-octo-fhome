@@ -5,6 +5,8 @@ import {
   Row,
   Col
 } from "reactstrap";
+import LinkedinTeam from "./linkedinTeam";
+import WhatsappTeam from "./whatsappTeam";
 
 class TeamTab extends React.Component {
   state = {
@@ -32,6 +34,16 @@ class TeamTab extends React.Component {
                               Vaibhav Mandhana                             
                           </p>                        
                       </div>
+                      <div style={{textAlign:"center"}}>
+                        <a href="https://www.linkedin.com/in/vaibhav-mandhana-92786882/" target="_blank">
+                          <LinkedinTeam/>
+                        </a>
+                        &nbsp;
+                        &nbsp;
+                        <a href="//api.whatsapp.com/send?phone=919967110003&text=I'm interested" target="_blank" style={{color:"#3b8c7f"}}>
+                          <WhatsappTeam/>
+                        </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -45,6 +57,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                               Neha Jain
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/neha-jain-55065067/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -60,6 +77,11 @@ class TeamTab extends React.Component {
                               Akash Agarwal
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/akash-agarwal-5716b388/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -73,6 +95,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                               Antim Patni
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/antim-patni-42a685137/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -88,6 +115,11 @@ class TeamTab extends React.Component {
                               Rasesh Seth
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/rasesh-seth-2a957a50/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -101,6 +133,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Sujata Behani
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/sujata-mandhana-bb464522/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -116,6 +153,11 @@ class TeamTab extends React.Component {
                           Aditi Jain
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/aditi-jain-26406968/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -129,6 +171,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Aniket Goel
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/aniket-goel-9661925b/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -144,6 +191,11 @@ class TeamTab extends React.Component {
                           Akriti Chakravorty
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/akriti-chakravorty-2a121b2b " target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -157,6 +209,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Aneri Dani
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/aneridani/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -172,6 +229,11 @@ class TeamTab extends React.Component {
                           Nivedita Singh
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/nivedita-singh-9629689/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -185,6 +247,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Sonali Taparia
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/sonali-taparia-mandhana-4615a6aa/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -200,6 +267,11 @@ class TeamTab extends React.Component {
                           Chhavi Jain
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/chhavi-jain-a9096815/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -213,6 +285,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Prateek Agarwal
                           </p>
+                      </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/prateek-agrawal-53b4133b/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>
@@ -228,6 +305,11 @@ class TeamTab extends React.Component {
                           Avantika Sheth
                           </p>
                       </div>
+                      <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/avantika-toshniwal-sheth-857b47a8/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -242,6 +324,11 @@ class TeamTab extends React.Component {
                           Madhur Mandhana
                           </p>
                       </div>
+                      {/* <div style={{textAlign:"center"}}>
+                      <a href="https://www.linkedin.com/in/chhavi-jain-a9096815/">
+                      <LinkedinTeam/>
+                      </a>
+                      </div> */}
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -256,6 +343,11 @@ class TeamTab extends React.Component {
                           Vishal Vig
                           </p>
                       </div>
+                      <div style={{textAlign:"center",paddingBottom:20}}>
+                      <a href="https://www.linkedin.com/in/vishal-vig-44084155/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
+                      </div>
                       </div>
                     </Col>
                     <Col xs="6" md="4" lg="3" className="team-section">
@@ -269,6 +361,11 @@ class TeamTab extends React.Component {
                           <p className="team-name">
                           Hiya Rathi
                           </p>
+                      </div>
+                      <div style={{textAlign:"center",paddingBottom:20}}>
+                      <a href="https://www.linkedin.com/in/hiya-rathi-a27a0982/" target="_blank">
+                      <LinkedinTeam/>
+                      </a>
                       </div>
                       </div>
                     </Col>

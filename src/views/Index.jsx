@@ -1,18 +1,5 @@
-import React, {Suspense} from "react";
-
-// nodejs library that concatenates classes
-// import classnames from "classnames";
-
-// reactstrap components
-// import {
-//   Badge,
-//   Container,
-//   Row,
-//   Col,
-//   Card,
-//   CardBody,
-//   CardImg
-// } from "reactstrap";
+import React from "react";
+import { Zoom } from "react-reveal";
 
 // core components
 import DemoNavbar from "../components/Navbars/DemoNavbar";
@@ -20,7 +7,6 @@ import CardsFooter from "../components/Footers/SimpleFooter";
 import Hero from "../components/Hero";
 import FinTech from "components/finTech";
 import Valuations from "components/valuations";
-import RatingsBar from "components/ratingsBar";
 import VirtualCfo from "components/virtualCfo";
 import Services from "components/services";
 import Insurance from "components/insurance";
@@ -41,23 +27,22 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-       
         <DemoNavbar />
         <main ref="main">
           <Hero />
-          {/* <Cards /> */}
+          <Zoom>
           <FinTech />
-          {/* <WhatsappBar /> */}
           <Valuations />
-          <RatingsBar />
           <VirtualCfo />
           <Services />
           <Insurance/>
           <Recruitment/>
           <Visualizations/>
           <FundRaising/>
+          </Zoom>
         </main>
         <CardsFooter />
+        
       </>
     );
   }

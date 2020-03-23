@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Alert } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeartbeat
@@ -10,14 +10,14 @@ import ContactForm from "./Modal/contactForm";
 
 const Insurance = () => {
   return (
-    <section id="insurance" className="section section-lg bg-gradient-secondary section-padding background-white">
+    <section id="insurance" className="section section-lg section-padding background-white">
         
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
-              className="img-fluid section-image-styles insurance-img floating"
+              alt="insurance"
+              className="img-fluid insurance-img floating"
               src={require("assets/img/theme/insurance_green.png")}
             />
           </Col>

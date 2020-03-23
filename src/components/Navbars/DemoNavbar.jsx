@@ -5,15 +5,8 @@ import Headroom from "headroom.js";
 
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
-  DropdownToggle,
-  UncontrolledDropdown,
-  Media,
   NavbarBrand,
-  Navbar,
-  Container,
+  Navbar
 } from "reactstrap";
 import '../../assets/css/homecustom.css'
 
@@ -28,14 +21,14 @@ class DemoNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
-            className="navbar-main nav-test navbar-transparent navbar-light headroom"
+            className="navbar-main nav-align navbar-transparent navbar-light headroom"
             expand="lg"
             id="navbar-main"
           >
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img className="logo-size"
-                  alt="..."
-                  src={require("assets/img/theme/Logo.png")}
+                  alt="flookup"
+                  src={require("assets/img/theme/Flookup_white.png")}
                 /> 
                 {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
               </NavbarBrand>

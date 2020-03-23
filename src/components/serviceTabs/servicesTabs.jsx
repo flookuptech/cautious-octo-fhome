@@ -9,12 +9,13 @@ import {
   Nav,
   TabContent,
   TabPane,
-  Button
+  Button,
+  UncontrolledCollapse
 } from "reactstrap";
 
 class ServicesTabs extends React.Component {
   state = {
-    tabs: 1
+    tabs: 1,
   };
   
   toggleNavs = (e, state, index) => {
@@ -24,10 +25,13 @@ class ServicesTabs extends React.Component {
       
     });
   };
-
-  
+   
+  changeValue(e) {
+    this.setState({dropDownValue: e.currentTarget.textContent})
+  }
 
   render() {
+
     return (
       <>
         <div className="nav-wrapper">
@@ -37,18 +41,10 @@ class ServicesTabs extends React.Component {
             pills
             role="tablist"
           >
-            {/* <NavItem>
-              <NavLink
-                disabled
-                href="#"
-              >
-                FINTECH
-              </NavLink>
-              </NavItem> */}
               <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 1}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 1
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 1)}
@@ -61,7 +57,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 2}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 2
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 2)}
@@ -74,7 +70,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 3}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 3
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 3)}
@@ -83,12 +79,11 @@ class ServicesTabs extends React.Component {
               >
                 Compliance Health Care
               </NavLink>
-            </NavItem> 
-
+            </NavItem>        
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 4}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 4
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 4)}
@@ -101,7 +96,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 5}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 5
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 5)}
@@ -114,7 +109,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 6}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 6
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 6)}
@@ -127,7 +122,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 7}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 7
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 7)}
@@ -140,7 +135,7 @@ class ServicesTabs extends React.Component {
             <NavItem className="service-pills-padding">
               <NavLink
                 aria-selected={this.state.tabs === 8}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
+                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
                   active: this.state.tabs === 8
                 })}
                 onClick={e => this.toggleNavs(e, "tabs", 8)}
@@ -153,7 +148,7 @@ class ServicesTabs extends React.Component {
           </Nav>
         </div>
         
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
@@ -184,31 +179,27 @@ class ServicesTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs4">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
+                  Due Diligence
                 </p>
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                  Lorem Ipsum
+                  International Taxation
                 </p>
               </TabPane>
               <TabPane tabId="tabs6">
                 <p className="description">
-                  Lorem Ipsum
+                  Outsourcing
                 </p>
               </TabPane>
               <TabPane tabId="tabs7">
                 <p className="description">
-                  Lorem Ipsum
+                  Management Consulting
                 </p>
               </TabPane>
               <TabPane tabId="tabs8">
                 <p className="description">
-                  Lorem Ipsum
+                  Debt Syndication
                 </p>
               </TabPane>
             </TabContent>

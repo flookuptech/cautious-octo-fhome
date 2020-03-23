@@ -14,7 +14,7 @@ import {
   Modal
 } from "reactstrap";
 
-import Logo from "../../assets/img/theme/Logo.png"
+import Logo from "../../assets/img/theme/logo-01.png"
 
 class ContactForm extends React.Component {
   state = {
@@ -73,10 +73,10 @@ class ContactForm extends React.Component {
                 <Card className="bg-secondary shadow border-0">
                   <CardHeader className="bg-transparent pb-5 contact-card-header" >
                     <div className="text-muted text-center mt-2 mb-3">
-                    <img src={Logo} alt="logo" style={{height:30,width:90}} />
+                    <img src={Logo} alt="flookup" style={{height:55}} />
                     <br/>
                     <br/>
-                      <p style={{fontSize:20}}>Contact Form</p>
+                      <p style={{fontSize:20, color:"#11072e"}}>Contact Form</p>
                      
                     </div>
                   </CardHeader>
@@ -92,7 +92,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-single-02" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Name" id="name" name="name" type="name" />
+                          <Input className="input-placeholder-style" placeholder="Name" id="name" name="name" type="name" required />
                         </InputGroup>
                         </FormGroup>
                       <FormGroup className="mb-3">   
@@ -102,7 +102,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-email-83" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Email" id="email" name="email" type="email" />
+                          <Input className="input-placeholder-style"  placeholder="Email" id="email" name="email" type="email" required />
                         </InputGroup>
                       </FormGroup>
                       <FormGroup className="mb-3">
@@ -112,7 +112,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-chat-round" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Message" id="message" name="message" type="message" />
+                          <Input className="input-placeholder-style"  placeholder="Message" id="message" name="message" type="message" required />
                         </InputGroup>
                       </FormGroup>
                       <FormGroup>
@@ -122,7 +122,7 @@ class ContactForm extends React.Component {
                               <i className="ni ni-tablet-button" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Contact Number" id="contact" name="contact" type="contact" />
+                          <Input className="input-placeholder-style"  placeholder="Contact Number" id="contact" name="contact" type="tel" pattern="[0-9]{10}" required />
                         </InputGroup>
                       </FormGroup>
                       <div className="text-center">

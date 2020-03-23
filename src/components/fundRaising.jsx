@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Alert } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
  faSearchDollar
@@ -7,17 +7,18 @@ import {
 import '../assets/css/homecustom.css';
 import FundTabs from "./serviceTabs/fundTabs";
 import ContactForm from "./Modal/contactForm";
+import BackgroundWave from "./backgroundWave";
 
 const FundRaising = () => {
   return (
-    <section id="fund" className="section section-background-fill section-lg bg-gradient-secondary section-padding background-white">
+    <section id="fund" className="section section-background-fill section-lg fund-section section-padding">
         
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
             <img
-              alt="..."
-              className="img-fluid section-image-styles floating"
+              alt="fundraising"
+              className="img-fluid fund-image-styles floating"
               src={require("assets/img/theme/fund.png")}
             />
           </Col>
@@ -35,6 +36,7 @@ const FundRaising = () => {
           </Col>
         </Row>
       </Container>
+      <BackgroundWave/>
     </section>
   );
 };

@@ -5,9 +5,9 @@
 /* Background Gradient */
 
 .section-shaped .shape-style-1.shape-default {
-    /* background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%); */
-    background-image: linear-gradient(-78deg,#91e0cf 6%,#22c3a0 48%,#bce8a1 100%);
-    /* background: linear-gradient(to right, #FFC371, #FF5F6D); */
+     /* background: linear-gradient(-78deg,#91e0cf 6%,#22c3a0 48%,#bce8a1 100%);  */
+
+     background: linear-gradient(to right, #536976, #292e49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .section-shaped .shape + .container{
@@ -15,10 +15,6 @@
 }
 .section-padding{
     padding-top: 3rem;
-}
-.renewal-padding{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
 }
 
 .fa{
@@ -29,11 +25,15 @@
 }
 .background-white{
     background: #fff !important;
+    background-image: url(../img/theme/bg-img.svg) !important;
+    background-position: -50% 10%;
+    background-repeat: repeat-y;
 }
 .tag-line{
+    font-family: 'Telex', sans-serif;
     font-weight: 500;
     font-size: 34px;
-    color: #423939 !important;
+    color: #fff !important;
     padding-bottom: 25px !important;
 }
 
@@ -175,10 +175,10 @@
     color: #fff;
     font-size: 65px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Telex', sans-serif;
 }
 .headroom--not-top{
-    background-color:  rgba(239, 234, 229, 0.5) !important;
+    background-color: #2f3750 !important;
 }
 .about-section{
     height: 400px !important;
@@ -219,8 +219,9 @@
 }
 
 .logo-size{
-    height: 40px !important;
-    padding-left: 20px !important;
+    height: 70px !important;
+    padding-left: 10px !important;
+    padding-top: 15px !important;
 }
 
 .footer-social{
@@ -229,6 +230,7 @@
 
 .submit-btn{
     padding:10px 25px !important;
+    top:0px !important;
 }
 
 .footer-grid{
@@ -244,8 +246,64 @@
 }
 
 .footer-background{
-    background: #e7efff !important;
+    background: #fff !important;
 }
+
+.fund-section{
+    padding-bottom: 0px !important;
+}
+
+.footer-text{
+    color: #4eae6f !important;
+    font-weight: 400 !important;
+}
+
+.services-dropdown{
+    background: #fff;
+    border: #fff;
+    color: #4eae6f;
+}
+
+.services-dropdown:hover{
+    background: #fff;
+    color: #4eae6f;
+}
+
+.services-dropdown:active{
+    background: #4eae6f !important;
+    background-color: #4eae6f !important;
+}
+
+.show > .services-dropdown{
+    background-color: #4eae6f !important;
+}
+
+.nav-align{
+    padding-top: 0px !important;
+}
+
+.tabs-align{
+    padding: 10px !important;
+}
+
+.input-placeholder-style{
+    padding-left: 5px !important;
+}
+
+.card-border{
+    border-left: 5px solid rgb(80, 79, 96);
+    border-right: 5px solid rgb(80, 79, 96);
+}
+
+
+.css-1sqkuj2 {
+    padding-bottom: 26.5%;
+    bottom: calc(100% - 2px);
+    background-image: url(../img/theme/footer-waves.svg);
+    background-size: 100% 100%;
+}
+
+
 
 
 
@@ -253,22 +311,29 @@
 /* Desktop Responsive CSS */
 
 @media screen and (min-width: 1025px) {
-    
-    .valuation-img{
-        height: 600px !important;
-        width: 500px !important;
+
+    .fund-image-styles{
+        height: 350px !important;
+        width: 350px !important;
+        max-width: none !important;
+    }
+
+    .service-image-styles{
+        height: 400px !important;
+        width: 350px !important;
         max-width: none !important;
     }
     
+    
     .section-image-styles{
     height: 450px !important;
-    width: 450px !important;
+    width: 400px !important;
     max-width: none !important;
 }
 
     .insurance-img{
     height: 400px !important;
-    width: 450px !important;
+    width: 400px !important;
     max-width: none !important;
 
 }
@@ -318,12 +383,28 @@
     height: 140px !important;
 }
 .footer-social{
-    font-size: 14px !important;
+    font-size: 12px !important;
 }
+.section-header{
+    font-size: 30px !important;
 }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .home-section{
+        margin-left: 0px !important;
+    }
+
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
     .logo-size {
-    height: 25px !important;
+    height: 50px !important;
+    padding-left: 0px !important;
     }
     .translate-test{
         display: block !important;
@@ -340,3 +421,6 @@
   }
 
   /* Mobile CSS End */
+
+
+

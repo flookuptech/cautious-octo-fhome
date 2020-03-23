@@ -80,14 +80,13 @@ class About extends React.Component {
                 </div>
               </Card>
               <Row style={{paddingTop:60}}>
-                  <Card className="shadow"> 
+                  <Card style={{borderTop: "5px solid #57c5a1"}} className="shadow"> 
                       <h5 className="team-tag-line" style={{textAlign:"center",paddingTop:20,fontSize:40,fontWeight:"bold"}}>
                           Meet Our Team
                       </h5>                    
                   <TeamTab/>
                   </Card>
               </Row>
-            
             </Container>
           </section>
         </main>

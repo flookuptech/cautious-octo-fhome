@@ -10,7 +10,6 @@ import {
   TabContent,
   TabPane
 } from "reactstrap";
-import Monk from "../../assets/img/theme/monk-jobs.png"
 
 class RecruitmentTabs extends React.Component {
   state = {
@@ -60,7 +59,7 @@ class RecruitmentTabs extends React.Component {
             </NavItem>
           </Nav>
         </div>
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">

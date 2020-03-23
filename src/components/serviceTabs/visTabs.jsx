@@ -8,10 +8,8 @@ import {
   NavLink,
   Nav,
   TabContent,
-  TabPane,
-  Button
+  TabPane
 } from "reactstrap";
-import { Link } from "react-router-dom";
 
 class VisTabs extends React.Component {
   state = {
@@ -56,7 +54,7 @@ class VisTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                DashBoards
+                Dashboards
               </NavLink>
             </NavItem>
             <NavItem>
@@ -74,7 +72,7 @@ class VisTabs extends React.Component {
             </NavItem>
           </Nav>
         </div>
-        <Card className="shadow">
+        <Card className="shadow card-border">
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
