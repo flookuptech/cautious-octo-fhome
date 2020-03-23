@@ -28,7 +28,7 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img className="logo-size"
                   alt="flookup"
-                  src={require("assets/img/theme/logo-01.png")}
+                  src={require("assets/img/theme/Flookup_white.png")}
                 /> 
                 {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
               </NavbarBrand>

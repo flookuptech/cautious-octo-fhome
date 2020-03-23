@@ -1,4 +1,5 @@
 import React from "react";
+import { Zoom } from "react-reveal";
 
 // core components
 import DemoNavbar from "../components/Navbars/DemoNavbar";
@@ -12,8 +13,6 @@ import Insurance from "components/insurance";
 import Recruitment from "components/recruitment";
 import Visualizations from "components/visualizations";
 import FundRaising from "components/fundRaising";
-import LazyLoad from 'react-lazyload';
-
 
 // index page sections
 
@@ -31,6 +30,7 @@ class Landing extends React.Component {
         <DemoNavbar />
         <main ref="main">
           <Hero />
+          <Zoom>
           <FinTech />
           <Valuations />
           <VirtualCfo />
@@ -39,10 +39,9 @@ class Landing extends React.Component {
           <Recruitment/>
           <Visualizations/>
           <FundRaising/>
+          </Zoom>
         </main>
-        <LazyLoad>
         <CardsFooter />
-        </LazyLoad>
         
       </>
     );

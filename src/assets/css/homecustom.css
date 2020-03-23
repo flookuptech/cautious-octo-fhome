@@ -5,10 +5,9 @@
 /* Background Gradient */
 
 .section-shaped .shape-style-1.shape-default {
-    /* background-image: linear-gradient(-78deg,#bce6dd 6%,#65bba8 48%,#bce8a1 100%); */
-    
-    background: linear-gradient(-78deg,#91e0cf 6%,#22c3a0 48%,#bce8a1 100%);; 
-    /* background: linear-gradient(to right, #FFC371, #FF5F6D); */
+     /* background: linear-gradient(-78deg,#91e0cf 6%,#22c3a0 48%,#bce8a1 100%);  */
+
+     background: linear-gradient(to right, #536976, #292e49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .section-shaped .shape + .container{
@@ -34,7 +33,7 @@
     font-family: 'Telex', sans-serif;
     font-weight: 500;
     font-size: 34px;
-    color: #423939 !important;
+    color: #fff !important;
     padding-bottom: 25px !important;
 }
 

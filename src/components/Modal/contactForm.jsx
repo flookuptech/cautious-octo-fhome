@@ -76,7 +76,7 @@ class ContactForm extends React.Component {
                     <img src={Logo} alt="flookup" style={{height:55}} />
                     <br/>
                     <br/>
-                      <p style={{fontSize:20}}>Contact Form</p>
+                      <p style={{fontSize:20, color:"#11072e"}}>Contact Form</p>
                      
                     </div>
                   </CardHeader>
