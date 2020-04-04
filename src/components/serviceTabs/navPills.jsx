@@ -10,7 +10,7 @@ import {
       Link
     } from "react-scroll";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import { faChartLine,faHandHoldingUsd, faLaptopCode, faChalkboardTeacher, faToolbox, faHeartbeat, faUserGraduate, faSearchDollar } from '@fortawesome/free-solid-svg-icons'
+  import { faChartLine,faHandHoldingUsd, faLaptopCode, faChalkboardTeacher, faToolbox, faHeartbeat, faUserGraduate, faSearchDollar, faUmbrella } from '@fortawesome/free-solid-svg-icons'
   import '../../assets/css/homecustom.css'
   
   class NavPills extends React.Component {
@@ -108,7 +108,7 @@ import {
         </Row>
         <Row>&nbsp;</Row>
         <Row className="justify-content-md-center">
-            <Col xs="6" md="3" lg="2">
+            {/* <Col xs="6" md="3" lg="2">
             <a href="#">
             <NavItem className="banner-pills">
             <Link
@@ -126,26 +126,7 @@ import {
                </Link>
               </NavItem>
               </a>
-            </Col>
-            <Col xs="6" md="3" lg="2">
-            <a href="#">
-            <NavItem className="banner-pills">
-            <Link
-                    activeClass="active"
-                    to="recruitment"
-                    spy={true}
-                    smooth="easeInBounce"
-                    duration={500}
-                    offset={10}
-                  >
-                <span className="nav-link-icon home-banner-icons d-block">
-                 <FontAwesomeIcon className="banner-pills-icon" icon={faUserGraduate} />
-                  <p className="pills-text">Recruitment</p>
-                </span>
-               </Link>
-              </NavItem>
-              </a>
-            </Col>
+            </Col> */}
             <Col xs="6" md="3" lg="2">
             <a href="#">
             <NavItem className="banner-pills">
@@ -179,6 +160,25 @@ import {
                 <span className="nav-link-icon home-banner-icons d-block">
                  <FontAwesomeIcon className="banner-pills-icon" icon={faSearchDollar} />
                   <p className="pills-text">Fund Raising</p>
+                </span>
+               </Link>
+              </NavItem>
+              </a>
+            </Col>
+            <Col xs="6" md="3" lg="2">
+            <a href="#">
+            <NavItem className="banner-pills">
+            <Link
+                    activeClass="active"
+                    to="insurance"
+                    spy={true}
+                    smooth="easeInBounce"
+                    duration={500}
+                    offset={10}
+                  >
+                <span className="nav-link-icon home-banner-icons d-block">
+                 <FontAwesomeIcon className="banner-pills-icon" icon={faUmbrella} />
+                  <p className="pills-text">Other Ventures</p>
                 </span>
                </Link>
               </NavItem>

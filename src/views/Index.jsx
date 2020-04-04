@@ -35,10 +35,10 @@ class Landing extends React.Component {
           <Valuations />
           <VirtualCfo />
           <Services />
-          <Insurance/>
-          <Recruitment/>
           <Visualizations/>
           <FundRaising/>
+          <Insurance/>
+          {/* <Recruitment/> */}
           </Zoom>
         </main>
         <CardsFooter />

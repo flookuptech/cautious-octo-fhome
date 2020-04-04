@@ -46,11 +46,8 @@ class Hero extends React.Component {
                       src={require("assets/img/theme/Logo.png")}/> */}
                     <Typing speed="500">
                       <h5 className="header-style">
-                        Your Financial Effectiveness
+                        Finance, driven by Technology
                         </h5>
-                        <h5 className="header-style">Guide</h5>
-                        <Typing.Backspace count={5} />
-                        <h5 className="header-style">Partner</h5>
                       </Typing>
      
                     <h1 className="display-3 text-white tag-line">

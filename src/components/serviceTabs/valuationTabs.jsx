@@ -64,23 +64,12 @@ class ValuationTabs extends React.Component {
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
-                </p>
-                <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse.
+                Reaching the right value keeping in mind all variables has been the key factor for various start ups, Industry players, private equity houses in entrusting us over the last 3 years. We work on prescribed guidelines and models of valuation and do a meticulous study and reach a fair valuation.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
                 <p className="description">
-                  Cosby sweater eu banh mi, qui irure terry richardson ex
-                  squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
-                  quis cardigan american apparel, butcher voluptate nisi qui.
+                We provide a spectrum of merchant banking and investment banking services. Our team of experienced professionals specialize in assisting small and medium enterprises in raising growth capital. We understand the sector specific metrics, drivers, priorities and challenges which helps us position our client’s businesses better.
                 </p>
               </TabPane>
             </TabContent>

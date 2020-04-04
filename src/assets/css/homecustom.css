@@ -69,7 +69,7 @@
 .pills-text{
     color: #313030 !important;
     padding-top: 10px;
-    font-size: 17px !important;
+    font-size: 15px !important;
     font-weight: 500 !important;
 }
 .banner-pills > a.active{
@@ -332,8 +332,8 @@
 }
 
     .insurance-img{
-    height: 400px !important;
-    width: 400px !important;
+    height: 450px !important;
+    width: 450px !important;
     max-width: none !important;
 
 }
@@ -372,9 +372,7 @@
 .btn11{
     padding: 15px 20px !important;
 }
-.pills-text{
-    font-size: 16px !important;
-}
+
 .home-banner-icons{
     height: 130px !important;
     width: 130px !important;

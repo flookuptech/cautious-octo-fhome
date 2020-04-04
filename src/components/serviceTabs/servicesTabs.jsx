@@ -103,7 +103,7 @@ class ServicesTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                International Taxation
+                Internal Control Testing
               </NavLink>
             </NavItem>
             <NavItem className="service-pills-padding">
@@ -116,7 +116,7 @@ class ServicesTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                Outsourcing
+                Management Consulting
               </NavLink>
             </NavItem>
             <NavItem className="service-pills-padding">
@@ -129,20 +129,7 @@ class ServicesTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                Management Consulting
-              </NavLink>
-            </NavItem>
-            <NavItem className="service-pills-padding">
-              <NavLink
-                aria-selected={this.state.tabs === 8}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", "tabs-align", {
-                  active: this.state.tabs === 8
-                })}
-                onClick={e => this.toggleNavs(e, "tabs", 8)}
-                href="#pablo"
-                role="tab"
-              >
-                Debt Syndication
+                Government Schemes 
               </NavLink>
             </NavItem>
           </Nav>
@@ -153,53 +140,48 @@ class ServicesTabs extends React.Component {
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
-                </p>
+                Audit being a statutory compliance with high regulatory checks every organization spends a lot of time and resources on it. The Eco system is such that our accounting and reporting guidelines are under frequent updations requiring precise reporting, additional disclosures and higher compliances.</p>
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse.
+                Our team of CA’s help bridge the gap between the client and the auditors and help in providing timely deliverables.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
                 <p className="description">
-                  Cosby sweater eu banh mi, qui irure terry richardson ex
-                  squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
-                  quis cardigan american apparel, butcher voluptate nisi qui.
+                Our Indirect tax experts offer exhaustive consulting as per verticals and industry to the client and guide them about their GST compliance procedures and updating them with   in guiding and keeping them updated about GST, its impact on their organization.</p>
+                <p className="description">
+                We aim to align our knowledge and expertise with your Company’s existing accounting team and achieve optimum results.
                 </p>
               </TabPane>
               <TabPane tabId="tabs3">
                 <p className="description">
-                  Lorem Ipsum
+                Review of Company’s data for a sample period from a Compliance perspective to identify gaps in compliance/ exposures and identify loopholes if any. We have our own comprehensive industry specific checklists which are curated by our in house CA’s who have rich industry experience.
                 </p>
               </TabPane>
               <TabPane tabId="tabs4">
                 <p className="description">
-                  Due Diligence
+                Our team of diligent professionals specialize in both buy side, sell side transactions. We aim to maximize value for any proposed transaction and therefore we have industry specific professionals to carry out a diligence. Our approach to diligence is situational and dynamic. We specialize in Financial, Tax, Human Resources and Legal due diligence.
                 </p>
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                  International Taxation
+                Our process of planning, analysis and testing helps the Management in assessing the GAPs in the system and our suggestions would help in implementation of better controls around the GAPs.
+                </p> 
+                <p className="description">
+                Our procedures are inline with the business vision and goals. Understanding organizational protocols, relationships and processes. We Design the internal audit calendar after a through discussion with the Management taking into consideration their expectations.
                 </p>
               </TabPane>
               <TabPane tabId="tabs6">
                 <p className="description">
-                  Outsourcing
-                </p>
+                Consulting is more than just giving Advice. We assist organisations to improve their performance by leveraging technology and carrying out in depth strategy and process analysis through brain storing and aligning management vision. </p>
+                <p className="description">
+                We help businesses improve their performance and thereby help them  grow by solving problems and finding new and better ways of doing things thereby bringing both efficiency and effectiveness in the process.</p>          
               </TabPane>
               <TabPane tabId="tabs7">
                 <p className="description">
-                  Management Consulting
+                Micro, small and medium enterprises (MSMEs) form a substantial chunk of the organized business sector in India, and our focus is to assist these MSMEs and Startups with the various loan schemes, government subsidies and recognition to help them grow.
                 </p>
-              </TabPane>
-              <TabPane tabId="tabs8">
-                <p className="description">
-                  Debt Syndication
+                <p className="description"> 
+                We have an entire database of all the Government schemes in your state applicable to your Industry, we help you understand the scheme applicable and assist you in sending the application to the Government.  
                 </p>
               </TabPane>
             </TabContent>

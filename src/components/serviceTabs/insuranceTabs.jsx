@@ -41,7 +41,7 @@ class InsuranceTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                Life Insurance
+                Recruitment Portal
               </NavLink>
             </NavItem>
             <NavItem className="service-pills-padding">
@@ -54,7 +54,7 @@ class InsuranceTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                Health Insurance
+                Insurance
               </NavLink>
             </NavItem>
             <NavItem className="service-pills-padding">
@@ -67,33 +67,7 @@ class InsuranceTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                General Insurance
-              </NavLink>
-            </NavItem>
-            <NavItem className="service-pills-padding">
-              <NavLink
-                aria-selected={this.state.tabs === 4}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
-                  active: this.state.tabs === 4
-                })}
-                onClick={e => this.toggleNavs(e, "tabs", 4)}
-                href="#pablo"
-                role="tab"
-              >
-                Mutual Funds
-              </NavLink>
-            </NavItem>
-            <NavItem className="service-pills-padding">
-              <NavLink
-                aria-selected={this.state.tabs === 5}
-                className={classnames("mb-sm-3 mb-md-0","nav-box-shadow", {
-                  active: this.state.tabs === 5
-                })}
-                onClick={e => this.toggleNavs(e, "tabs", 5)}
-                href="#pablo"
-                role="tab"
-              >
-                Bonds
+                Wealth Management
               </NavLink>
             </NavItem>
           </Nav>
@@ -102,43 +76,27 @@ class InsuranceTabs extends React.Component {
           <CardBody>
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
+                <h4>MonkJobs</h4>
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
+                MonkJobs is a hiring solutions provider that offers recruiting services including headhunting and executive search across industry sectors. Our team of chartered accountants look into each profile required and assess each CV before placing it to our clients. We have our methods of screening candidates prior to proposing them to our clients which we believe are different from normal market practices and we trust we can meet our client requirements.  
                 </p>
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse.
+                Our method of candidate selection involves the use of our rich industry exposure (our team being finance professionals themselves) which entails we are asking substantial questions to the client which in turn formulates our thoughts and help us simmer into the profile.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
+                <h4>Value Umbrella</h4>
                 <p className="description">
-                  Cosby sweater eu banh mi, qui irure terry richardson ex
-                  squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
-                  quis cardigan american apparel, butcher voluptate nisi qui.
+                Your advisor in choosing the right Insurance plan both for Life Insurance and Health Insurance. With the use of technology we have created a platform for Financially literate community, and thereby a channel across India to help choose the right plan for you. 
                 </p>
               </TabPane>
               <TabPane tabId="tabs3">
+                <h4>Analog Wealth Solutions</h4>
                 <p className="description">
-                  Lorem Ipsum
+                Mutual Funds Sahi hai ? Speak to our experts and get to know it better. Based on ones risk appetite, tenure, tax saving option, Investment purposes and other requirements of the Investors; one can choose from varied Mutual Funds - Equity Fund, Debt Fund, Hybrid Fund, ELSS.
                 </p>
-              </TabPane>
-              <TabPane tabId="tabs4">
-                <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
-                </p>
-              </TabPane>
-              <TabPane tabId="tabs5">
-                <p className="description">
-                  Lorem Ipsum
+                <p className="description"> 
+                Bonds are a perfect offering to Investors looking for safe haven with reasonable returns. Bonds with varied tenure are offered by the RBI with cumulative and non-cumulative interest options. Other bonds are for investors who earned long-term capital gains from land or building or both and would like tax exemption on these gains. Speak to our experts to understand which bond suits you the best.
                 </p>
               </TabPane>
             </TabContent>
