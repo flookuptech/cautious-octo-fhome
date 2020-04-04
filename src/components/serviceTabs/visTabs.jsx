@@ -77,28 +77,26 @@ class VisTabs extends React.Component {
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
+                The Data analyst in our team when monitored by experienced professional in the field of Finance lead to the right kind of analysis of raw data and draw a conclusion.        
                 </p>
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse.
+                Our data analyst team reveal trends and metrics that would otherwise be lost in the mass of information and our professional team use their experience and macro economic factors to give the right insights.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
                 <p className="description">
-                  Cosby sweater eu banh mi, qui irure terry richardson ex
-                  squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
-                  quis cardigan american apparel, butcher voluptate nisi qui.
+                We assist you in preparing the right format of MIS/Dashboards for the Management in your Organisation. The reporting could flow directly from your accounting solution via API or though an excel document per the Management requirement. This data helps the management in taking right decision at the right point of time. 
+                </p>
+                <p className="description">
+                Its not just analytics we help you with, its the insights through our solution.
                 </p>
               </TabPane>
               <TabPane tabId="tabs3">
                 <p className="description">
-                  Lorem Ipsum
+                Our Visualisation team prepares the visual content focussing on emerging trends in business, finance and economics. We simplify the humongous data, complex financial and economic data and information into simplified images.
+                </p>
+                <p className="description"> 
+                You want us to analyse your data and present it into a visual which can be presented to your Board Members ? Or if you want us to help you with Market research or Industry analysis get in touch with us. 
                 </p>
                 {/* <Link to="/infographics">
                 <Button>

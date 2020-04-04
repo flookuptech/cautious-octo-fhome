@@ -64,23 +64,18 @@ class FundTabs extends React.Component {
             <TabContent activeTab={"tabs" + this.state.tabs}>
               <TabPane tabId="tabs1">
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse. Mustache cliche tempor, williamsburg carles vegan
-                  helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                  synth.
+                Debt is the most popular form of raising capital. We assist clients in syndication of debt for new, diversification or expansion of projects and through the entire transaction cycle from preparation of financial plans to identification of size and type of debt (short, medium or long term). 
                 </p>
                 <p className="description">
-                  Raw denim you probably haven't heard of them jean shorts
-                  Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse.
+                Our debt syndication team ensures loan sanctioning, facilitating execution of requisite documents and due disbursal of loans. Our team carries an experience of more than a decade in banking industry (former bank executives) who specialize in facilitating project finance, term loans, working capital loans.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
                 <p className="description">
-                  Cosby sweater eu banh mi, qui irure terry richardson ex
-                  squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
-                  quis cardigan american apparel, butcher voluptate nisi qui.
+                Funding, in the context of startups, is when a person or an organisation provides the founders with finance in order to grow or develop the product. Equity investors require a longterm ownership stake in a venture in exchange for capital.
+                </p>
+                <p className="description">
+                We help our Investor network connect with the investment suiting their requirement, tenure and sectors. If its an Angel Investor, VC or Strategic partner our team will help you connect with the right personnel
                 </p>
               </TabPane>
             </TabContent>

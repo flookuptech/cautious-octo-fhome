@@ -7,10 +7,11 @@ import {
 import '../assets/css/homecustom.css';
 import RecruitmentTabs from "./serviceTabs/recruitmentTabs";
 import ContactForm from "./Modal/contactForm";
+import BackgroundWave from "./backgroundWave";
 
 const Recruitment = () => {
   return (
-    <section id="recruitment" className="section section-background-fill section-lg section-padding">
+    <section id="recruitment" className="section section-background-fill fund-section section-lg section-padding">
       <Container>
         <Row className="row-grid align-items-center">
           <Col className="order-md-2" md="4">
@@ -34,6 +35,7 @@ const Recruitment = () => {
           </Col>
         </Row>
       </Container>
+      <BackgroundWave/>
     </section>
   );
 };
