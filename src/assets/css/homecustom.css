@@ -386,7 +386,12 @@
 .section-header{
     font-size: 30px !important;
 }
-
+.tag-line{
+    font-size: 25px !important;
+}
+.venture-icon-pill{
+    margin-left: 60%;
+}
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {

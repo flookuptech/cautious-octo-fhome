@@ -223,7 +223,8 @@ class CfoTabs extends React.Component {
                 We are Growth CFO partners, right from incorporation of the Company to handling all transactions /accounting/ compliances/ valuation and raising funds.
                 </p>
                 <p className="description">
-                Structuring of the entity having revenues from abroad, incorporating entities in Singapore, Dubai and Mumbai.Thereafter managing the finance domain for them. Partners in raising funds for an NBFC to the tune of 250 Million.
+                Structuring of the entity having revenues from abroad, incorporating entities in Singapore, Dubai and Mumbai.Thereafter managing the finance domain for them.
+                <br/> Raised funds for an NBFC to the tune of 250 Million.
                 </p>
               </TabPane>
               <TabPane tabId="tabs2">
