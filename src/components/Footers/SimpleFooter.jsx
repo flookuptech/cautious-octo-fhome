@@ -119,7 +119,7 @@ class SimpleFooter extends React.Component {
                     About Us
                   </Link>
             <div className="blog">
-                <a href="https://myregisteredvaluer.com/" target="_blank">
+                <a href="https://https://blog.flookup.com/" target="_blank">
                     Our Blogs
                   </a>
                 </div>

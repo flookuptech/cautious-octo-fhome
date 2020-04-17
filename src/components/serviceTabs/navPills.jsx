@@ -176,7 +176,7 @@ import {
                     duration={500}
                     offset={10}
                   >
-                <span className="nav-link-icon home-banner-icons d-block">
+                <span className="nav-link-icon venture-icon-pill home-banner-icons d-block">
                  <FontAwesomeIcon className="banner-pills-icon" icon={faUmbrella} />
                   <p className="pills-text">Other Ventures</p>
                 </span>
