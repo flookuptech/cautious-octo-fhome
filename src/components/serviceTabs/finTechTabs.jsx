@@ -101,7 +101,7 @@ class FinTechTabs extends React.Component {
                 href="#pablo"
                 role="tab"
               >
-                Vendor Onboarding
+                Vendor/Customer Onboarding
               </NavLink>
             </NavItem>
           </Nav>
@@ -139,7 +139,7 @@ class FinTechTabs extends React.Component {
               </TabPane>
               <TabPane tabId="tabs5">
                 <p className="description">
-                Companies face difficulty in maintaining adequate documentation and process around the vendor and customer on-boarding and the typical hard copy documentation or long conversations over emails is still in practice. To remove all of those and provide a hierarchy  based approval system in which all the documents are also attached for viewing and filing purposes. The solution has inbuilt SMS and Email triggers set at various events. The solution help save your manpower time. 
+                Companies face difficulty in maintaining adequate documentation and process around the vendor and customer on-boarding. The typical hard copy documentation or long conversations over emails is still in practice. We have a solution to remove all of those and to provide a hierarchy based approval system in which all the documents can be attached for viewing and filing purposes, the solution also has inbuilt SMS and Email triggers set at various events. The solution help save your manpower time.
                 </p>
               </TabPane>
             </TabContent>

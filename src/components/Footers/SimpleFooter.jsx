@@ -115,9 +115,9 @@ class SimpleFooter extends React.Component {
                 Home
               </Link>
               <br/>
-            <Link to={"/about"}>
+            {/* <Link to={"/about"}>
                     About Us
-                  </Link>
+                  </Link> */}
             <div className="blog">
                 <a href="https://blog.flookup.com/" target="_blank">
                     Our Blogs

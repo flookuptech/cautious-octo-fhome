@@ -45,13 +45,13 @@ class Hero extends React.Component {
                       className="img-fluid banner-img-logo"
                       src={require("assets/img/theme/Logo.png")}/> */}
                     <Typing speed="500">
-                      <h5 className="header-style" style={{color:"#469a34"}}>
+                      <h5 className="header-style" style={{color:"#2be66f"}}>
                         Finance,<span style={{color:"#fff"}}> driven by Technology</span>
                         </h5>
                       </Typing>
      
                     <h1 className="display-3 text-white tag-line">
-                      Grow With Us
+                      
                     </h1> 
                   </Col>
                 </Row>
