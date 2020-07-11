@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 
 // reactstrap components
-import {
-  NavbarBrand,
-  Navbar
-} from "reactstrap";
-import '../../assets/css/homecustom.css'
+import { NavbarBrand, Navbar, Button } from "reactstrap";
+import "../../assets/css/homecustom.css";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -21,17 +18,24 @@ class DemoNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
+            style={{ display: "flex", justifyContent: "space-between" }}
             className="navbar-main nav-align navbar-transparent navbar-light headroom"
             expand="lg"
             id="navbar-main"
           >
-              <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <img className="logo-size"
-                  alt="flookup"
-                  src={require("assets/img/theme/Flookup_white.png")}
-                /> 
-                {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
-              </NavbarBrand>
+            <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
+              <img
+                className="logo-size"
+                alt="flookup"
+                src={require("assets/img/theme/Flookup_white.png")}
+              />
+              {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
+            </NavbarBrand>
+            <Link to="/network">
+              <Button color="success" style={{ fontWeight: "bold" }}>
+                Network
+              </Button>
+            </Link>
           </Navbar>
         </header>
       </>
