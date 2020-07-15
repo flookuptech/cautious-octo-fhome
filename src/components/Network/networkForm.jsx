@@ -9,6 +9,7 @@ class NetworkForm extends Component {
     data: {},
     selectedServices: [],
     formSubmitted: false,
+    loading: false,
   };
 
   redirectToHome = () => {
@@ -30,12 +31,13 @@ class NetworkForm extends Component {
   };
 
   handleSubmit = (e) => {
-    const { selectedServices } = this.state;
     e.preventDefault();
+    const { selectedServices, loading } = this.state;
     if (selectedServices.length === 0) {
       alert("Please select atleast 1 Service before submitting the form");
     }
     if (selectedServices.length !== 0) {
+      this.setState({ loading: !loading });
       const data = new FormData();
       var dataLabels = Object.keys(this.state.data);
       var dataValues = Object.values(this.state.data);
@@ -57,7 +59,7 @@ class NetworkForm extends Component {
       fetch(scriptUrl, { method: "POST", body: data })
         .then((response) =>
           response.status === 200
-            ? this.setState({ formSubmitted: true })
+            ? this.setState({ formSubmitted: true, loading: !loading })
             : null
         )
         .catch((error) => console.error("Error!", error));
@@ -65,7 +67,7 @@ class NetworkForm extends Component {
   };
 
   render() {
-    const { formSubmitted } = this.state;
+    const { formSubmitted, loading } = this.state;
 
     return (
       <Fragment>
@@ -99,6 +101,7 @@ class NetworkForm extends Component {
                     onChange={this.handleOnChange}
                     onSubmit={this.handleSubmit}
                     handleSelectChange={this.handleSelectChange}
+                    loading={loading}
                   />
                 </form>
               </Fragment>

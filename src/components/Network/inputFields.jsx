@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Button, FormGroup, Label, Input, Col, Row } from "reactstrap";
+import { Button, FormGroup, Label, Input, Col, Row, Spinner } from "reactstrap";
 import { textFieldsArray } from "./inputFieldsArray";
 import { Multiselect } from "multiselect-react-dropdown";
 
@@ -45,7 +45,7 @@ const options = [
   { name: "Others" },
 ];
 
-const FormFields = ({ onChange, onSubmit, handleSelectChange }) => {
+const FormFields = ({ onChange, onSubmit, handleSelectChange, loading }) => {
   return (
     <Fragment>
       <Row form>
@@ -55,6 +55,7 @@ const FormFields = ({ onChange, onSubmit, handleSelectChange }) => {
               <FormGroup>
                 <Label for={item.name}>{item.label}</Label>
                 <Input
+                  style={{ color: "black" }}
                   type={item.type}
                   name={item.label}
                   id={item.name}
@@ -88,12 +89,23 @@ const FormFields = ({ onChange, onSubmit, handleSelectChange }) => {
           />
         </Col>
       </FormGroup>
+      <br />
       <Button
-        style={{ backgroundColor: "rgb(47, 55, 80)", color: "white" }}
+        style={{
+          backgroundColor: "rgb(47, 55, 80)",
+          color: "white",
+          width: "150px",
+          padding: "8px",
+        }}
         size="lg"
         onSubmit={onSubmit}
+        disabled={loading ? true : false}
       >
-        Submit Details
+        {loading ? (
+          <Spinner animation="border" role="status" />
+        ) : (
+          "Submit Details"
+        )}
       </Button>
     </Fragment>
   );
