@@ -1,46 +1,81 @@
-import React from "react";
-import { Link } from "react-router-dom";
-// JavaScript plugin that hides or shows a component based on your scroll
-import Headroom from "headroom.js";
-
-// reactstrap components
-import { NavbarBrand, Navbar, Button } from "reactstrap";
+import React, { Component } from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 import "../../assets/css/homecustom.css";
 
-class DemoNavbar extends React.Component {
-  componentDidMount() {
-    let headroom = new Headroom(document.getElementById("navbar-main"));
-    // initialise
-    headroom.init();
+const links = [
+  { href: "http://localhost:3000/network", text: "Network" },
+  {
+    href: "http://localhost:3000/pincodeDistanceCalculator",
+    text: "Pincode Distance Calculator",
+  },
+];
+
+const createNavItem = ({ href, text, className }) => (
+  <NavItem>
+    <NavLink
+      href={href}
+      className={className}
+      style={{ color: "rgba(47, 55, 80, 0.8)", fontWeight: "bold" }}
+    >
+      {text}
+    </NavLink>
+  </NavItem>
+);
+
+export default class DemoNavbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false,
+    };
+
+    this.toggle = this.toggle.bind(this);
   }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    });
+  }
+
   render() {
     return (
       <>
         <header className="header-global">
-          <Navbar
-            style={{ display: "flex", justifyContent: "space-between" }}
-            className="navbar-main nav-align navbar-transparent navbar-light headroom"
-            expand="lg"
-            id="navbar-main"
-          >
-            <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-              <img
-                className="logo-size"
-                alt="flookup"
-                src={require("assets/img/theme/Flookup_white.png")}
-              />
-              {/*<h5 className="text-white mt-1">ValueUmbrella</h5>*/}
-            </NavbarBrand>
-            <Link to="/network">
-              <Button color="success" style={{ fontWeight: "bold" }}>
-                Network
-              </Button>
-            </Link>
-          </Navbar>
+          <div>
+            <Navbar
+              color="light"
+              expand="lg"
+              id="navbar-main"
+              className="navbar-main nav-align custom-toggler navbar-transparent headroom"
+            >
+              <NavbarBrand href="/">
+                <img
+                  className="logo-size"
+                  alt="flookup"
+                  src={require("assets/img/theme/logo-01.png")}
+                />
+              </NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                  {links.map(createNavItem)}
+                </Nav>
+              </Collapse>
+            </Navbar>
+            <br />
+          </div>
         </header>
       </>
     );
   }
 }
-
-export default DemoNavbar;

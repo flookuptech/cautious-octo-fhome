@@ -6,6 +6,7 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 import Loader from "components/Loader/loader";
 import NetworkForm from "./components/Network/networkForm";
+import DistanceCalculator from "./components/DistanceApp/DistanceApp";
 
 class App extends React.Component {
   render() {
@@ -29,7 +30,10 @@ class App extends React.Component {
               render={(props) => <Infographics {...props} />}
             />
             <Route path="/network" component={NetworkForm} />
-            <Redirect to="/" />
+            <Route
+              path="/pincodeDistanceCalculator"
+              component={DistanceCalculator}
+            />
           </Switch>
         </Suspense>
       </BrowserRouter>

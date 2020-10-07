@@ -3,6 +3,7 @@ import { Container, NavbarBrand, Navbar } from "reactstrap";
 import "../../assets/css/homecustom.css";
 import "./networkForm.css";
 import InputFields from "./inputFields";
+import { Link } from "react-router-dom";
 
 class NetworkForm extends Component {
   state = {
@@ -78,13 +79,15 @@ class NetworkForm extends Component {
             expand="lg"
             id="navbar-main"
           >
-            <NavbarBrand className="mr-lg-5">
-              <img
-                className="logo-size"
-                alt="flookup"
-                src={require("assets/img/theme/Flookup_white.png")}
-              />
-            </NavbarBrand>
+            <Link to="../">
+              <NavbarBrand className="mr-lg-5">
+                <img
+                  className="logo-size"
+                  alt="flookup"
+                  src={require("assets/img/theme/Flookup_white.png")}
+                />
+              </NavbarBrand>
+            </Link>
           </Navbar>
         </header>
         <Fragment>

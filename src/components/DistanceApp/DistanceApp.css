@@ -1,0 +1,43 @@
+.header {
+  color: #4eae6f;
+}
+#head {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #4eae6f;
+}
+.btnn {
+  background-color: #4eae6f;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 25;
+  padding-right: 25;
+}
+
+.btnn:hover {
+  background-color: rgb(47, 55, 80);
+  color: white;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.row {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.inp {
+  border: 1px solid grey;
+}
+
+.mar {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pd {
+  padding-left: 3px;
+}
