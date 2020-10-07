@@ -8,26 +8,28 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 import "../../assets/css/homecustom.css";
 
 const links = [
-  { href: "http://localhost:3000/network", text: "Network" },
+  { href: "/network", text: "Network" },
   {
-    href: "http://localhost:3000/pincodeDistanceCalculator",
+    href: "/pincodeDistanceCalculator",
     text: "Pincode Distance Calculator",
   },
 ];
 
 const createNavItem = ({ href, text, className }) => (
-  <NavItem>
-    <NavLink
-      href={href}
-      className={className}
-      style={{ color: "rgba(47, 55, 80, 0.8)", fontWeight: "bold" }}
-    >
-      {text}
-    </NavLink>
-  </NavItem>
+  <Link to={href}>
+    <NavItem>
+      <NavLink
+        className={className}
+        style={{ color: "rgba(47, 55, 80, 0.8)", fontWeight: "bold" }}
+      >
+        {text}
+      </NavLink>
+    </NavItem>
+  </Link>
 );
 
 export default class DemoNavbar extends Component {
