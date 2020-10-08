@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GOOGLE_MAPS_API_KEY from "./secrets";
+import { HERE_API_KEY } from "./secrets";
 import "./map.css";
 class Map extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Map extends Component {
         className="map img-fluid"
         src={
           this.state.url +
-          `apiKey=${GOOGLE_MAPS_API_KEY}&waypoint0=${latorigin},${lngorigin}&waypoint1=${latdest},${lngdest}&poix0=${latorigin},${lngorigin};white;white;21;.&poix1=${latdest},${lngdest};red;red;21;.&lc=1652B4&lw=10&t=5&ppi=310&w=1125&h=250`
+          `apiKey=${HERE_API_KEY}&waypoint0=${latorigin},${lngorigin}&waypoint1=${latdest},${lngdest}&poix0=${latorigin},${lngorigin};white;white;21;.&poix1=${latdest},${lngdest};red;red;21;.&lc=1652B4&lw=10&t=5&ppi=310&w=1125&h=250`
         }
         alt="Map"
       />

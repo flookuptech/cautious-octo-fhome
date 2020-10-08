@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Loading } from "./Loading";
 import axios from "axios";
-import GOOGLE_MAPS_API_KEY from "./secrets";
+import { TOMTOM_API_KEY, OPENCAGE_API_KEY } from "./secrets";
 import Map from "./Map";
 import "./result.css";
 class Result extends Component {
@@ -34,34 +34,32 @@ class Result extends Component {
     const self = this;
     axios
       .get(
-        `https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=${GOOGLE_MAPS_API_KEY}&searchtext=${origin}&country=IND`
+        `https://api.opencagedata.com/geocode/v1/json?q=${origin}&countrycode=in&key=${OPENCAGE_API_KEY}`
       )
       .then(function (res) {
-        latorigin =
-          res.data.Response.View[0].Result[0].Location.DisplayPosition.Latitude;
-        lngorigin =
-          res.data.Response.View[0].Result[0].Location.DisplayPosition
-            .Longitude;
+        console.log(res);
+        latorigin = res.data.results[0].geometry.lat;
+        lngorigin = res.data.results[0].geometry.lng;
 
         axios
           .get(
-            `https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=${GOOGLE_MAPS_API_KEY}&searchtext=${dest}&country=IND`
+            `https://api.opencagedata.com/geocode/v1/json?q=${dest}&countrycode=in&key=${OPENCAGE_API_KEY}`
           )
           .then(function (res) {
-            latdest =
-              res.data.Response.View[0].Result[0].Location.DisplayPosition
-                .Latitude;
-            lngdest =
-              res.data.Response.View[0].Result[0].Location.DisplayPosition
-                .Longitude;
+            console.log(res);
+            latdest = res.data.results[0].geometry.lat;
+            lngdest = res.data.results[0].geometry.lng;
 
             axios
               .get(
-                `https://route.ls.hereapi.com/routing/7.2/calculateroute.json?apiKey=${GOOGLE_MAPS_API_KEY}&waypoint0=geo!${latorigin},${lngorigin}&waypoint1=geo!${latdest},${lngdest}&mode=fastest;car;traffic:disabled`
+                `https://api.tomtom.com/routing/1/calculateRoute/${encodeURI(
+                  `${latorigin},${lngorigin}:${latdest},${lngdest}`
+                )}/json?computeBestOrder=true&traffic=false&travelMode=car&key=${TOMTOM_API_KEY}`
               )
               .then(function (response) {
-                time = response.data.response.route[0].summary.baseTime;
-                distance = response.data.response.route[0].summary.distance;
+                console.log(response);
+                time = response.data.routes[0].summary.travelTimeInSeconds;
+                distance = response.data.routes[0].summary.lengthInMeters;
                 let hr, min, km, m;
                 if (distance > 1000) {
                   km = Math.floor(distance / 1000);
