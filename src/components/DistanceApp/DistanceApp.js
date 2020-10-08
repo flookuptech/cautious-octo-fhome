@@ -100,7 +100,7 @@ class App extends Component {
           <div className="row">
             <div className="col-12">
               <h3 id="head" className="text-center text-uppercase">
-                Distance between zipcodes
+                Distance between Pincodes
               </h3>
             </div>
           </div>
