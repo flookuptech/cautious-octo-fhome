@@ -124,7 +124,7 @@ class Result extends Component {
           ) : (
             <>
               <div className="row justify-content-between result">
-                <h4 className="col-md-6 col-sm-12">
+                <h4 className="col-md-7 col-sm-12">
                   Distance:
                   {this.state.loading ? (
                     <Loading />
@@ -132,7 +132,7 @@ class Result extends Component {
                     <span> {this.state.distance}</span>
                   )}
                 </h4>
-                <h4 className="col-md-6 col-sm-12">
+                <h4 className="col-md-5 col-sm-12">
                   Travel duration:
                   {this.state.loading ? (
                     <Loading />
@@ -141,6 +141,11 @@ class Result extends Component {
                   )}
                 </h4>
               </div>
+              <h6 className="text-center" style={{ color: "#2f3750" }}>
+                <b>Note:</b> The calculated Distance and Travel duration are
+                approximate and not exact
+              </h6>
+              <br />
               <div className="row justify-content-start">
                 <h4 className="col-12">Route:</h4>
                 {this.state.loading ? (

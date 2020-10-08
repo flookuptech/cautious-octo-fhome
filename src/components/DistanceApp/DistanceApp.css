@@ -1,11 +1,11 @@
-.header {
-  color: #4eae6f;
-}
 #head {
   margin-bottom: 30px;
   margin-top: 50px;
-  color: #4eae6f;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2f3750;
 }
+
 .btnn {
   background-color: #4eae6f;
   color: white;
@@ -16,21 +16,23 @@
 }
 
 .btnn:hover {
-  background-color: rgb(47, 55, 80);
+  background-color: #2f3750;
   color: white;
 }
 
 .label {
   font-size: 20px;
   font-weight: 700;
+  color: #2f3750;
 }
+
 .row {
   margin-bottom: 15px;
   padding: 0;
 }
 
 .inp {
-  border: 1px solid grey;
+  border: 1px solid #2f3750;
 }
 
 .mar {

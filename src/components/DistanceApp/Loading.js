@@ -3,14 +3,18 @@ import { Button, Spinner } from "reactstrap";
 
 export const Loading = () => {
   return (
-    // <div className="col-12">
-    //   <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary text-center"></span>
-    //   <p>Loading . . .</p>
-    // </div>
-    <div className="text-center">
-      <Spinner>
-        <span className="sr-only">Loading...</span>
-      </Spinner>
+    <div
+      className="text-center"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#2f3750",
+        fontSize: 18,
+      }}
+    >
+      <Spinner />
+      &nbsp;&nbsp;Please wait
     </div>
   );
 };

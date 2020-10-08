@@ -99,11 +99,7 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h3
-                id="head"
-                className="text-center heading text-uppercase header"
-                style={{ fontSize: 20, fontWeight: "bold" }}
-              >
+              <h3 id="head" className="text-center text-uppercase">
                 Distance between zipcodes
               </h3>
             </div>
@@ -123,6 +119,7 @@ class App extends Component {
                     <Col className="col-md-8 col-lg-6 col-sm-12">
                       <Input
                         className="inp"
+                        placeholder="Enter Pincode of the origin"
                         type="text"
                         id="origin"
                         name="origin"
@@ -147,6 +144,7 @@ class App extends Component {
                     <Col className="col-md-7 col-lg-8 col-sm-12 ">
                       <Input
                         className="inp"
+                        placeholder="Enter Pincode of the destination"
                         type="text"
                         id="dest"
                         name="dest"

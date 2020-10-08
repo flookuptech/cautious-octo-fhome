@@ -11,6 +11,29 @@
   margin-top: 60px;
 }
 
+#heading {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2f3750;
+}
+
+.submitButton {
+  background-color: #4eae6f;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8;
+  width: 150;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #2f3750;
+  color: white;
+}
+
 .form {
   padding: 1em;
 }

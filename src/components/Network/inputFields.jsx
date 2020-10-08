@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Button, FormGroup, Label, Input, Col, Row, Spinner } from "reactstrap";
 import { textFieldsArray } from "./inputFieldsArray";
 import { Multiselect } from "multiselect-react-dropdown";
+import "./networkForm.css";
 
 const options = [
   { name: "Actuarial Valuation" },
@@ -53,9 +54,10 @@ const FormFields = ({ onChange, onSubmit, handleSelectChange, loading }) => {
           return (
             <Col key={item.label} sm={12} md={6} lg={6}>
               <FormGroup>
-                <Label for={item.name}>{item.label}</Label>
+                <Label style={{ color: "#2f3750" }} for={item.name}>
+                  {item.label}
+                </Label>
                 <Input
-                  style={{ color: "black" }}
                   type={item.type}
                   name={item.label}
                   id={item.name}
@@ -70,7 +72,12 @@ const FormFields = ({ onChange, onSubmit, handleSelectChange, loading }) => {
         })}
       </Row>
       <FormGroup row>
-        <Label for="exampleSelectMulti" md={5} sm={12}>
+        <Label
+          style={{ color: "#2f3750" }}
+          for="exampleSelectMulti"
+          md={5}
+          sm={12}
+        >
           Select Services (MAX 5 are allowed)
         </Label>
         <Col sm={10} lg={7}>
@@ -91,13 +98,8 @@ const FormFields = ({ onChange, onSubmit, handleSelectChange, loading }) => {
       </FormGroup>
       <br />
       <Button
-        style={{
-          backgroundColor: "rgb(47, 55, 80)",
-          color: "white",
-          width: "150px",
-          padding: "8px",
-        }}
-        size="lg"
+        className="submitButton"
+        size="sm"
         onSubmit={onSubmit}
         disabled={loading ? true : false}
       >

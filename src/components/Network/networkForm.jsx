@@ -94,7 +94,9 @@ class NetworkForm extends Component {
           <Container className="App">
             {formSubmitted === false ? (
               <Fragment>
-                <h2 align="center">Finance Network</h2>
+                <h2 id="heading" className="text-center text-uppercase">
+                  Finance Network
+                </h2>
                 <form
                   className="form"
                   name="submit-to-google-sheet"

@@ -24,7 +24,7 @@ const createNavItem = ({ href, text, className }) => (
     <NavItem>
       <NavLink
         className={className}
-        style={{ color: "rgba(47, 55, 80, 0.8)", fontWeight: "bold" }}
+        style={{ color: "#2f3750", fontWeight: "bold" }}
       >
         {text}
       </NavLink>
